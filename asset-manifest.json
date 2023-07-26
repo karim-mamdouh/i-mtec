@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/i-mtec/static/css/main.b9bd902c.css",
+    "main.js": "/i-mtec/static/js/main.9ee2a124.js",
+    "static/js/787.d9901b45.chunk.js": "/i-mtec/static/js/787.d9901b45.chunk.js",
+    "static/media/logo.webp": "/i-mtec/static/media/logo.0b08aee4af11dd59c86e.webp",
+    "index.html": "/i-mtec/index.html",
+    "main.b9bd902c.css.map": "/i-mtec/static/css/main.b9bd902c.css.map",
+    "main.9ee2a124.js.map": "/i-mtec/static/js/main.9ee2a124.js.map",
+    "787.d9901b45.chunk.js.map": "/i-mtec/static/js/787.d9901b45.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9bd902c.css",
+    "static/js/main.9ee2a124.js"
+  ]
+}
