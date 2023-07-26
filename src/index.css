@@ -20,3 +20,8 @@ body,
 #root {
   flex-grow: 1;
 }
+
+:root {
+  --primary-color: #d00b22;
+  --secondary-color: #000;
+}

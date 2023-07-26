@@ -7,6 +7,7 @@ import NavBar from "./components/organisms/NavBar/NavBar.component";
 import Footer from "./components/organisms/Footer/Footer.component";
 import { Stack } from "@mui/material";
 import { appStyles } from "./App.style";
+import SocialMedia from "./components/organisms/SocialMedia/SocialMedia.component";
 
 const customTheme = theme;
 
@@ -18,6 +19,7 @@ const App = () => {
         <AppRoute />
       </Stack>
       <Footer />
+      <SocialMedia />
     </ThemeProvider>
   );
 };

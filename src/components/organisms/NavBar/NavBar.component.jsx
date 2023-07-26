@@ -1,37 +1,70 @@
-import { Box, Stack } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import logo from "../../../assets/images/logo.webp";
 import React from "react";
 import { navBarStyles } from "./NavBar.style";
 import { NavLink } from "react-router-dom";
+import { createNavLink } from "../../../utilities/factories";
+import useWindowResize from "../../../utilities/hooks/useWindowResize";
+import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+
+const navLinks = [
+  createNavLink("Home", "/"),
+  createNavLink("About", "/about"),
+  createNavLink("Contact Us", "/contact-us"),
+];
 
 const NavBar = () => {
+  const windowWidth = useWindowResize();
+
+  const getActiveLinkColor = ({ isActive }) =>
+    isActive ? navBarStyles.activeLink : navBarStyles.link;
+
   return (
-    <Box component="nav">
+    <Box component="nav" sx={navBarStyles.nav}>
       <Stack sx={navBarStyles.container}>
         {/* Logo */}
-        <NavLink to="/" style={navBarStyles.logoContainer}>
-          <Box component="figure">
+        <NavLink
+          to="/"
+          style={{
+            ...navBarStyles.logoContainer,
+            width: navBarStyles.logoContainer.width(windowWidth),
+          }}
+        >
+          <Box component="figure" sx={navBarStyles.figure}>
             <Box
               component="img"
               src={logo}
               alt="i-mtec logo"
               sx={navBarStyles.logo}
-            ></Box>
+            />
           </Box>
         </NavLink>
-        <p style={navBarStyles.title}>iNNOVATiVE MANUFACTURiNG TECHNOLOGiES</p>
+
+        {/* Title */}
+        {windowWidth >= 768 && (
+          <Stack sx={navBarStyles.title}>
+            <Typography variant="h1">
+              iNNOVATiVE MANUFACTURiNG TECHNOLOGiES
+            </Typography>
+          </Stack>
+        )}
+
         {/* Nav links */}
-        <Stack component="ul" sx={navBarStyles.linksList}>
-          <Box component="li">
-            <NavLink to="/">Home</NavLink>
-          </Box>
-          <Box component="li">
-            <NavLink to="/about">About</NavLink>
-          </Box>
-          <Box component="li">
-            <NavLink to="/contact-us">Contact Us</NavLink>
-          </Box>
-        </Stack>
+        {windowWidth >= 768 ? (
+          <Stack component="ul" sx={navBarStyles.linksList}>
+            {navLinks.map((link, index) => (
+              <Stack component="li" key={index}>
+                <NavLink to={link.path} style={getActiveLinkColor}>
+                  {link.title}
+                </NavLink>
+              </Stack>
+            ))}
+          </Stack>
+        ) : (
+          <Stack sx={navBarStyles.sideNavContainer}>
+            <MenuOutlinedIcon sx={navBarStyles.barsIcon} />
+          </Stack>
+        )}
       </Stack>
     </Box>
   );
