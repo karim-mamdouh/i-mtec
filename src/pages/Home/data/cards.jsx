@@ -5,6 +5,10 @@ import card3Img from "../../../assets/images/img4.webp";
 import card4Img from "../../../assets/images/img5.webp";
 import card5Img from "../../../assets/images/img6.webp";
 import card6Img from "../../../assets/images/img7.webp";
+// Mission Images
+import card8Img from "../../../assets/images/img8.webp";
+import card9Img from "../../../assets/images/img9.webp";
+import card10Img from "../../../assets/images/img10.webp";
 
 export const cards = [
   createHeroCard(
@@ -40,4 +44,9 @@ export const industrialCards = [
     "Contract Manufacturing",
     " iMT, our expertise is in designing and developing robust processes. We understand the steps it takes to bring your idea from concept to execution."
   ),
+];
+export const missionSectionCards = [
+  createHeroCard(card8Img, "Mission", "link 1"),
+  createHeroCard(card9Img, "Vision", "link 2"),
+  createHeroCard(card10Img, "Quality Policy", "link 3"),
 ];

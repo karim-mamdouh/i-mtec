@@ -53,4 +53,12 @@ export const homeStyles = {
     flexWrap: { xs: "wrap", sm: "nowrap" },
   },
   solutionCardContainer: { width: { xs: "100%", sm: "33.33%" } },
+
+  missionSection: {
+    padding: "50px 0",
+    flexDirection: "row",
+    gap: "0",
+    flexWrap: { xs: "wrap", sm: "nowrap" },
+  },
+  missionCardContainer: { width: { xs: "100%", sm: "33.33%" } },
 };

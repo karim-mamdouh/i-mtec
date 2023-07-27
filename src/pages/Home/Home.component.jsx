@@ -2,8 +2,9 @@ import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import { homeStyles } from "./Home.style";
 import HeroCard from "../../components/organisms/HeroCard/HeroCard.component";
-import { cards, industrialCards } from "./data/cards";
+import { cards, industrialCards, missionSectionCards } from "./data/cards";
 import IndustrialCard from "../../components/organisms/IndustrialCards/IndustrialCards.component";
+import MissionCard from "../../components/organisms/missionCard/Mission.component";
 
 export const Home = () => {
   return (
@@ -65,6 +66,14 @@ export const Home = () => {
               title={card.title}
               subtitle={card.subtitle}
             />
+          </Box>
+        ))}
+      </Stack>
+      {/* Mission section */}
+      <Stack sx={homeStyles.missionSection}>
+        {missionSectionCards.map((card, index) => (
+          <Box sx={homeStyles.missionCardContainer}>
+            <MissionCard key={index} image={card.image} title={card.title} />
           </Box>
         ))}
       </Stack>
