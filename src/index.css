@@ -24,4 +24,5 @@ body,
 :root {
   --primary-color: #d00b22;
   --secondary-color: #000;
+  --ternary-color: #f5f5f5;
 }

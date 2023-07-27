@@ -12,10 +12,15 @@ export const industrialCardStyle = {
   figure: {},
   title: {
     fontWeight: "bold",
-    marginBottom: "10px",
+    fontSize: "1.5rem",
+  },
+  subtitle: {
+    padding: "0 10px",
   },
   button: {
     width: "fit-content",
     marginLeft: "auto",
+    borderRadius: "0",
+    margin: "5px 5px 5px auto",
   },
 };
