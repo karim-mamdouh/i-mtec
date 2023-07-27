@@ -92,6 +92,7 @@ export const theme = createTheme({
             fontWeight: 400,
             borderRadius: "8px",
             backgroundColor: "#d00b22",
+            fontSize: "1rem",
           },
         },
 
