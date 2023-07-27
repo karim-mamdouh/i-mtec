@@ -16,7 +16,7 @@ const NavBar = () => {
               src={logo}
               alt="i-mtec logo"
               sx={navBarStyles.logo}
-            ></Box>
+            />
           </Box>
         </NavLink>
         <p style={navBarStyles.title}>iNNOVATiVE MANUFACTURiNG TECHNOLOGiES</p>
