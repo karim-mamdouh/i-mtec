@@ -60,9 +60,8 @@ export const Home = () => {
       </Stack>
       <Stack sx={homeStyles.solutionCardsContainer}>
         {industrialCards.map((card, index) => (
-          <Box sx={homeStyles.solutionCardContainer}>
+          <Box key={index} sx={homeStyles.solutionCardContainer}>
             <IndustrialCard
-              key={index}
               image={card.image}
               title={card.title}
               subtitle={card.subtitle}
@@ -73,8 +72,8 @@ export const Home = () => {
       {/* Mission section */}
       <Stack sx={homeStyles.missionSection}>
         {missionSectionCards.map((card, index) => (
-          <Box sx={homeStyles.missionCardContainer}>
-            <MissionCard key={index} image={card.image} title={card.title} />
+          <Box key={index} sx={homeStyles.missionCardContainer}>
+            <MissionCard image={card.image} title={card.title} />
           </Box>
         ))}
       </Stack>
@@ -89,12 +88,11 @@ export const Home = () => {
         </Box>
         <Box component="div" sx={homeStyles.socialMediaLinksContainer}>
           {mediaLinks.map((link, index) => (
-            <Box component="span" sx={homeStyles.socialLink}>
+            <Box key={index} component="span" sx={homeStyles.socialLink}>
               <Typography
                 component="a"
                 href={link.link}
                 target="_blank"
-                key={index}
                 style={{ color: "#FFF" }}
               >
                 {link.icon}

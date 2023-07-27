@@ -94,7 +94,7 @@ function TextFieldInput({
         value={value}
         onChange={onChange}
         InputProps={{
-          disableUnderline: disableUnderline,
+          disableunderline: String(disableUnderline),
           startAdornment: StartAdornment ? (
             <InputAdornment position="start">
               <>{StartAdornment}</>

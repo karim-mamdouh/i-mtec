@@ -93,11 +93,12 @@ const Footer = () => {
             </Box>
           </NavLink>
           <Stack gap={"10px"} sx={footerStyle.linksContainer}>
-            <box xs={footerStyle.linksBox}>
+            <Box xs={footerStyle.linksBox}>
               {footerLinks.map(
-                (link) =>
+                (link, index) =>
                   footerLinks.indexOf(link) < 4 && (
                     <NavLink
+                      key={index}
                       to={link.path}
                       style={{
                         ...footerStyle.link,
@@ -107,12 +108,13 @@ const Footer = () => {
                     </NavLink>
                   )
               )}
-            </box>
-            <box xs={footerLinks.linksBox}>
+            </Box>
+            <Box xs={footerLinks.linksBox}>
               {footerLinks.map(
-                (link) =>
+                (link, index) =>
                   footerLinks.indexOf(link) >= 4 && (
                     <NavLink
+                      key={index}
                       to={link.path}
                       style={{
                         ...footerStyle.link,
@@ -122,7 +124,7 @@ const Footer = () => {
                     </NavLink>
                   )
               )}
-            </box>
+            </Box>
           </Stack>
         </Stack>
         <Divider
