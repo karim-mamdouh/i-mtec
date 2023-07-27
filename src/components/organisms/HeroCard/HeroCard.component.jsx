@@ -6,6 +6,7 @@ import { heroCardStyles } from "./HeroCard.style";
 const HeroCard = ({ image, title, subtitle }) => {
   return (
     <Box component="div" sx={heroCardStyles.card}>
+      <Box component="section" sx={heroCardStyles.overlay}></Box>
       <Box component="figure" sx={heroCardStyles.cardImgContainer}>
         <Box
           component="img"

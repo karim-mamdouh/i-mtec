@@ -5,6 +5,7 @@ import HeroCard from "../../components/organisms/HeroCard/HeroCard.component";
 import { cards, industrialCards, missionSectionCards } from "./data/cards";
 import IndustrialCard from "../../components/organisms/IndustrialCards/IndustrialCards.component";
 import MissionCard from "../../components/organisms/missionCard/Mission.component";
+import { mediaLinks } from "../../components/organisms/SocialMedia/SocialMedia.component";
 
 export const Home = () => {
   return (
@@ -76,6 +77,31 @@ export const Home = () => {
             <MissionCard key={index} image={card.image} title={card.title} />
           </Box>
         ))}
+      </Stack>
+      {/* Social Media section*/}
+      <Stack sx={homeStyles.socialMediaSection}>
+        <Box component="div" sx={{ padding: "30px" }}>
+          <Typography component="h3" sx={homeStyles.socialMediaTitle}>
+            24 / 7 Updates Via Social Media
+          </Typography>
+          <Typography component="h5">Join our tech community. </Typography>
+          <Typography component="h5">Follow us today. </Typography>
+        </Box>
+        <Box component="div" sx={homeStyles.socialMediaLinksContainer}>
+          {mediaLinks.map((link, index) => (
+            <Box component="span" sx={homeStyles.socialLink}>
+              <Typography
+                component="a"
+                href={link.link}
+                target="_blank"
+                key={index}
+                style={{ color: "#FFF" }}
+              >
+                {link.icon}
+              </Typography>
+            </Box>
+          ))}
+        </Box>
       </Stack>
     </>
   );

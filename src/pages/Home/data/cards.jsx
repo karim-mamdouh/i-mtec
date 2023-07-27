@@ -1,4 +1,7 @@
-import { createHeroCard } from "../../../utilities/factories";
+import {
+  createHeroCard,
+  createMissionCard,
+} from "../../../utilities/factories";
 import card1Img from "../../../assets/images/img1.webp";
 import card2Img from "../../../assets/images/img2.webp";
 import card3Img from "../../../assets/images/img4.webp";
@@ -46,7 +49,7 @@ export const industrialCards = [
   ),
 ];
 export const missionSectionCards = [
-  createHeroCard(card8Img, "Mission", "link 1"),
-  createHeroCard(card9Img, "Vision", "link 2"),
-  createHeroCard(card10Img, "Quality Policy", "link 3"),
+  createMissionCard(card8Img, "Mission", "link 1"),
+  createMissionCard(card9Img, "Vision", "link 2"),
+  createMissionCard(card10Img, "Quality Policy", "link 3"),
 ];

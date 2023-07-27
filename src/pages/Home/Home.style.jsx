@@ -53,12 +53,40 @@ export const homeStyles = {
     flexWrap: { xs: "wrap", sm: "nowrap" },
   },
   solutionCardContainer: { width: { xs: "100%", sm: "33.33%" } },
-
+  // Mission Section
   missionSection: {
-    padding: "50px 0",
+    paddingTop: "50px",
     flexDirection: "row",
     gap: "0",
     flexWrap: { xs: "wrap", sm: "nowrap" },
   },
   missionCardContainer: { width: { xs: "100%", sm: "33.33%" } },
+  // Social Media Section
+  socialMediaSection: {
+    backgroundColor: "var(--primary-color)",
+    display: "flex",
+    margin: "20px 0",
+    flexDirection: { xs: "column", md: "row" },
+    gap: "30px",
+    color: "white",
+  },
+  socialMediaTitle: {
+    fontSize: "1.8rem",
+    fontWeight: "bold",
+    marginBottom: "10px",
+  },
+  socialMediaLinksContainer: {
+    borderLeft: "1px solid white",
+    borderRight: "1px solid white",
+    display: "flex",
+    alignItems: "center",
+  },
+  socialLink: {
+    color: "white",
+    padding: "0 20px",
+    height: "100%",
+    display: "flex",
+    alignItems: "center",
+    borderRight: "1px solid white",
+  },
 };

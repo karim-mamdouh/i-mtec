@@ -3,6 +3,7 @@ import React from "react";
 import SearchForm from "../../molecules/Search/SearchForm";
 import logo from "../../../assets/images/logo.webp";
 import { NavLink } from "react-router-dom";
+import { footerStyle } from "./Footer.style";
 
 const Footer = () => {
   const footerLinks = [
@@ -20,6 +21,14 @@ const Footer = () => {
     },
     {
       name: "Contact",
+      path: "/",
+    },
+    {
+      name: "Innovation",
+      path: "/",
+    },
+    {
+      name: "FQA",
       path: "/",
     },
   ];
@@ -56,24 +65,20 @@ const Footer = () => {
         <Stack
           rowGap={"30px"}
           flexDirection={{ xs: "column", md: "row" }}
-          marginTop="70px"
+          marginTop="90px"
           justifyContent={"space-between"}
         >
           {/* Logo */}
           <NavLink
             to="/"
             style={{
-              borderRight: "1px solid black",
-              display: "flex",
-              gap: "10px",
-              textDecoration: "none",
-              color: "#fff",
+              ...footerStyle.logo,
             }}
           >
             <Box
               component="figure"
               backgroundColor="#fff"
-              sx={{ width: "35%" }}
+              sx={{ width: { xs: "100%", md: "35%" } }}
             >
               <Box
                 component="img"
@@ -82,17 +87,42 @@ const Footer = () => {
                 sx={{ maxWidth: "100%" }}
               />
             </Box>
-            <Box alignSelf={"end"}>
-              <Typography>iMT</Typography>
+            <Box alignSelf={"end"} sx={{ width: { xs: "100%", md: "65%" } }}>
+              <Typography style={{ ...footerStyle.title }}>iMT</Typography>
               <Typography>Innovative Manufacturing Technologies</Typography>
             </Box>
           </NavLink>
-          <Stack gap={"10px"}>
-            {footerLinks.map((link) => (
-              <NavLink to={link.path} style={{ color: "#fff" }}>
-                {link.name}
-              </NavLink>
-            ))}
+          <Stack gap={"10px"} sx={footerStyle.linksContainer}>
+            <box xs={footerStyle.linksBox}>
+              {footerLinks.map(
+                (link) =>
+                  footerLinks.indexOf(link) < 4 && (
+                    <NavLink
+                      to={link.path}
+                      style={{
+                        ...footerStyle.link,
+                      }}
+                    >
+                      {link.name}
+                    </NavLink>
+                  )
+              )}
+            </box>
+            <box xs={footerLinks.linksBox}>
+              {footerLinks.map(
+                (link) =>
+                  footerLinks.indexOf(link) >= 4 && (
+                    <NavLink
+                      to={link.path}
+                      style={{
+                        ...footerStyle.link,
+                      }}
+                    >
+                      {link.name}
+                    </NavLink>
+                  )
+              )}
+            </box>
           </Stack>
         </Stack>
         <Divider
@@ -107,7 +137,7 @@ const Footer = () => {
             About Us
           </Typography>
           <Typography variant="h4" fontSize={"16px"} width="360px">
-            I'm a paragraph. Click here to add your own text and edit me. I’m a
+            I'm a paragraph. Click here to add your own text and edit me. I'm a
             great place for you to tell a story and let your users know a little
             more about you.
           </Typography>

@@ -12,7 +12,6 @@ export const missionSectionStyle = {
     objectFit: "cover",
     objectPosition: "50% 50%",
   },
-  figure: {},
   title: {
     fontWeight: "bold",
     color: "#000",

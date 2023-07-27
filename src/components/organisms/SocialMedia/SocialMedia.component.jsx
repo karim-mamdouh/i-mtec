@@ -8,7 +8,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
-const mediaLinks = [
+export const mediaLinks = [
   createMediaLink("https://www.facebook.com/", <FacebookIcon />),
   createMediaLink("https://www.instagram.com/", <InstagramIcon />),
   createMediaLink("https://www.youtube.com/", <YouTubeIcon />),
