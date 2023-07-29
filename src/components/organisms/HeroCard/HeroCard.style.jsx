@@ -1,4 +1,11 @@
 export const heroCardStyles = {
+  overlay: {
+    position: "absolute",
+    width: "100%",
+    height: "100%",
+    backgroundColor: "#000",
+    opacity: "0.4",
+  },
   card: {
     position: "relative",
   },
@@ -8,6 +15,7 @@ export const heroCardStyles = {
   cardContent: {
     position: "absolute",
     top: 0,
+    zIndex: "2",
     color: "white",
     height: "100%",
     padding: "15px",

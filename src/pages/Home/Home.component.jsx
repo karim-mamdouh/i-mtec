@@ -2,8 +2,10 @@ import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import { homeStyles } from "./Home.style";
 import HeroCard from "../../components/organisms/HeroCard/HeroCard.component";
-import { cards, industrialCards } from "./data/cards";
+import { cards, industrialCards, missionSectionCards } from "./data/cards";
 import IndustrialCard from "../../components/organisms/IndustrialCards/IndustrialCards.component";
+import MissionCard from "../../components/organisms/missionCard/Mission.component";
+import { mediaLinks } from "../../components/organisms/SocialMedia/SocialMedia.component";
 
 export const Home = () => {
   return (
@@ -58,15 +60,46 @@ export const Home = () => {
       </Stack>
       <Stack sx={homeStyles.solutionCardsContainer}>
         {industrialCards.map((card, index) => (
-          <Box sx={homeStyles.solutionCardContainer}>
+          <Box key={index} sx={homeStyles.solutionCardContainer}>
             <IndustrialCard
-              key={index}
               image={card.image}
               title={card.title}
               subtitle={card.subtitle}
             />
           </Box>
         ))}
+      </Stack>
+      {/* Mission section */}
+      <Stack sx={homeStyles.missionSection}>
+        {missionSectionCards.map((card, index) => (
+          <Box key={index} sx={homeStyles.missionCardContainer}>
+            <MissionCard image={card.image} title={card.title} />
+          </Box>
+        ))}
+      </Stack>
+      {/* Social Media section*/}
+      <Stack sx={homeStyles.socialMediaSection}>
+        <Box component="div" sx={{ padding: "30px" }}>
+          <Typography component="h3" sx={homeStyles.socialMediaTitle}>
+            24 / 7 Updates Via Social Media
+          </Typography>
+          <Typography component="h5">Join our tech community. </Typography>
+          <Typography component="h5">Follow us today. </Typography>
+        </Box>
+        <Box component="div" sx={homeStyles.socialMediaLinksContainer}>
+          {mediaLinks.map((link, index) => (
+            <Box key={index} component="span" sx={homeStyles.socialLink}>
+              <Typography
+                component="a"
+                href={link.link}
+                target="_blank"
+                style={{ color: "#FFF" }}
+              >
+                {link.icon}
+              </Typography>
+            </Box>
+          ))}
+        </Box>
       </Stack>
     </>
   );
