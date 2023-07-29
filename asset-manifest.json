@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/i-mtec/static/css/main.84816f2d.css",
-    "main.js": "/i-mtec/static/js/main.57666102.js",
+    "main.js": "/i-mtec/static/js/main.bce93345.js",
     "static/js/787.d9901b45.chunk.js": "/i-mtec/static/js/787.d9901b45.chunk.js",
     "static/media/img5.webp": "/i-mtec/static/media/img5.a75b81e219af5b5c4672.webp",
     "static/media/img6.webp": "/i-mtec/static/media/img6.b289b753f7ecdd043657.webp",
@@ -16,11 +16,11 @@
     "static/media/background.webp": "/i-mtec/static/media/background.c08792e6e517868f9690.webp",
     "index.html": "/i-mtec/index.html",
     "main.84816f2d.css.map": "/i-mtec/static/css/main.84816f2d.css.map",
-    "main.57666102.js.map": "/i-mtec/static/js/main.57666102.js.map",
+    "main.bce93345.js.map": "/i-mtec/static/js/main.bce93345.js.map",
     "787.d9901b45.chunk.js.map": "/i-mtec/static/js/787.d9901b45.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.84816f2d.css",
-    "static/js/main.57666102.js"
+    "static/js/main.bce93345.js"
   ]
 }
