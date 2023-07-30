@@ -1,10 +1,11 @@
 import { Box, Stack, Typography } from "@mui/material";
 import Form from "../../components/organisms/Form/Form.component";
 import { aboutStyles } from "./About.style";
-import { Informations } from "./data/about";
+import { Informations, formFields } from "./data/about";
 import logo from "../../assets/images/logo.webp";
 import { NavLink } from "react-router-dom";
 import useWindowResize from "../../utilities/hooks/useWindowResize";
+import React from "react";
 export const About = () => {
   const windowWidth = useWindowResize();
   return (
@@ -67,7 +68,7 @@ export const About = () => {
         </Typography>
       </Stack>
       <Stack component="section" sx={aboutStyles.formSection}>
-        <Form></Form>
+        <Form formControllers={formFields}></Form>
       </Stack>
     </>
   );

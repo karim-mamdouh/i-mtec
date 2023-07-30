@@ -5,16 +5,23 @@ import { heroCardStyles } from "./HeroCard.style";
 
 const HeroCard = ({ image, title, subtitle }) => {
   return (
-    <Box component="div" sx={heroCardStyles.card}>
+    <Box
+      component="div"
+      sx={{
+        ...heroCardStyles.card,
+        backgroundImage: `url(${image})`,
+        backgroundSize: "cover",
+      }}
+    >
       <Box component="section" sx={heroCardStyles.overlay}></Box>
-      <Box component="figure" sx={heroCardStyles.cardImgContainer}>
+      {/* <Box component="figure" sx={heroCardStyles.cardImgContainer}>
         <Box
           component="img"
           src={image}
           alt="news-image"
           sx={heroCardStyles.cardImg}
         ></Box>
-      </Box>
+      </Box> */}
       <Stack component="div" sx={heroCardStyles.cardContent}>
         <Typography component="h3" sx={heroCardStyles.title}>
           {title}
