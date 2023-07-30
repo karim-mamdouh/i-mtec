@@ -1,16 +1,4 @@
 export const aboutStyles = {
-  header: {
-    flexDirection: "row",
-    color: "white",
-    borderBottom: "1px solid white",
-  },
-  headerTitle: {
-    backgroundColor: "var(--primary-color)",
-    padding: "10px 20px ",
-    fontSize: "1.5rem",
-    textAlign: "center",
-    minHeight: "100%",
-  },
   //   Banner Section
   banner: {
     color: "white",

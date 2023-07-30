@@ -9,17 +9,6 @@ export const About = () => {
   const windowWidth = useWindowResize();
   return (
     <>
-      <Stack component="header" sx={aboutStyles.header}>
-        <Typography component="h2" sx={aboutStyles.headerTitle}>
-          Highlights:
-        </Typography>
-        <Typography
-          component="h2"
-          sx={{ ...aboutStyles.headerTitle, ...aboutStyles.headerCarousel }}
-        >
-          Are you running out of floor space for projects you need to build?
-        </Typography>
-      </Stack>
       <Stack component="article" sx={aboutStyles.banner}>
         <Typography
           component="h2"

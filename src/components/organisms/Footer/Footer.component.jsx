@@ -59,7 +59,7 @@ const Footer = () => {
           <Typography variant="p" fontSize={"22px"} marginTop={"22px"}>
             Subscribe to Receive Our Latest Tech News
           </Typography>
-          <SearchForm />
+          {/* <SearchForm /> */}
         </Stack>
         <Divider color="white" sx={{ color: "#fff" }} />
         <Stack
@@ -127,7 +127,7 @@ const Footer = () => {
             </Box>
           </Stack>
         </Stack>
-        <Divider
+        {/* <Divider
           color="white"
           sx={{ color: "#fff", marginTop: "15px", width: "400px" }}
         />
@@ -143,7 +143,7 @@ const Footer = () => {
             great place for you to tell a story and let your users know a little
             more about you.
           </Typography>
-        </Stack>
+        </Stack> */}
       </Stack>
     </Stack>
   );
