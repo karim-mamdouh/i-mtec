@@ -9,6 +9,7 @@ export const formStyles = {
   },
   input: {
     marginTop: "10px",
+    width: "100%",
   },
   gridInput: {
     width: { xs: "100%", md: "45%" },

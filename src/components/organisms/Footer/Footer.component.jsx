@@ -50,7 +50,6 @@ const Footer = () => {
       >
         <Stack
           sx={{
-            // marginY: "50px",
             flexDirection: { xs: "column", md: "row" },
             gap: "25px",
             alignItems: { xs: "start", md: "center" },
@@ -61,7 +60,7 @@ const Footer = () => {
           </Typography>
           {/* <SearchForm /> */}
         </Stack>
-        <Divider color="white" sx={{ color: "#fff" }} />
+        <Divider color="white" sx={{ color: "#fff", width: "100%" }} />
         <Stack
           rowGap={"30px"}
           flexDirection={{ xs: "column", md: "row" }}
@@ -138,7 +137,7 @@ const Footer = () => {
           >
             About Us
           </Typography>
-          <Typography variant="h4" fontSize={"16px"} width="360px">
+          <Typography variant="h4" sx={footerStyle.desc}>
             I'm a paragraph. Click here to add your own text and edit me. I'm a
             great place for you to tell a story and let your users know a little
             more about you.

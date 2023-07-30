@@ -17,7 +17,7 @@ export const Home = () => {
       </Stack> */}
       <Stack component="section" sx={homeStyles.hero}>
         <Stack sx={homeStyles.heroLeft}>
-          <Box sx={{ width: "60%" }}>
+          <Box sx={{ width: "60%", marginBottom: "10px" }}>
             <Typography component="h3" sx={homeStyles.heroLeftTitle}>
               iMT News
             </Typography>
@@ -92,7 +92,15 @@ export const Home = () => {
         </Box>
         <Box component="div" sx={homeStyles.socialMediaLinksContainer}>
           {mediaLinks.map((link, index) => (
-            <Box key={index} sx={homeStyles.socialLink}>
+            <Box
+              key={index}
+              component="span"
+              sx={
+                index === 0 || index === mediaLinks.length - 1
+                  ? { ...homeStyles.socialLink, borderLeft: "1px solid #FFF" }
+                  : { ...homeStyles.socialLink }
+              }
+            >
               <Typography
                 component="a"
                 href={link.link}
