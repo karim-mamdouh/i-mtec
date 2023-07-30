@@ -17,7 +17,7 @@ export const footerStyle = {
   linksContainer: {
     display: "flex",
     width: { xs: "100%", md: "25%" },
-    flexDirection: "row",
+    flexDirection: "column",
   },
   linksBox: { margin: "20px", fontSize: "3rem" },
   link: {

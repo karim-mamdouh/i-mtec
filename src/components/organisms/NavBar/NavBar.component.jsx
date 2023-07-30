@@ -5,8 +5,8 @@ import { navBarStyles } from "./NavBar.style";
 import { NavLink } from "react-router-dom";
 import { createNavLink } from "../../../utilities/factories";
 import useWindowResize from "../../../utilities/hooks/useWindowResize";
-import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import Heighlights from "../Heighlights/Heighlights.component";
+import SideNav from "../SideNav/SideNav.component";
 
 const navLinks = [
   createNavLink("Home", "/"),
@@ -62,9 +62,7 @@ const NavBar = () => {
             ))}
           </Stack>
         ) : (
-          <Stack sx={navBarStyles.sideNavContainer}>
-            <MenuOutlinedIcon sx={navBarStyles.barsIcon} />
-          </Stack>
+          <SideNav />
         )}
       </Stack>
       <Heighlights />

@@ -9,6 +9,7 @@ export const heroCardStyles = {
   card: {
     position: "relative",
     height: "100%",
+    minHeight: { xs: "20rem", sm: "30rem" },
   },
   cardImg: {
     maxWidth: "100%",

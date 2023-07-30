@@ -11,7 +11,8 @@ export const contactStyles = {
     fontSize: { xs: "1.5rem", md: "2.5rem" },
     padding: "20px",
     fontWeight: "bold",
-    width: { xs: "100%", sm: "50%" },
+    width: "100%",
+    textAlign: "center",
   },
   // Address
   address: {
@@ -19,15 +20,18 @@ export const contactStyles = {
     alignItems: "end",
   },
   addressList: {
-    width: { xs: "100%", sm: "50%" },
+    // width: { xs: "100%", sm: "50%" },
     listStyle: "none",
     padding: "20px",
+    width: "100%",
+    alignItems: "center",
   },
   addressText: {
     fontSize: { xs: "1rem", md: "1.5rem" },
     fontWeight: "bold",
     marginBottom: "1rem",
     color: "var(--secondary-color)",
+    textDecoration: "none",
   },
 
   //   Form Section

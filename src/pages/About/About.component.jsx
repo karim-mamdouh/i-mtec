@@ -3,11 +3,10 @@ import Form from "../../components/organisms/Form/Form.component";
 import { aboutStyles } from "./About.style";
 import { Informations, formFields } from "./data/about";
 import logo from "../../assets/images/logo.webp";
-import { NavLink } from "react-router-dom";
-import useWindowResize from "../../utilities/hooks/useWindowResize";
+// import useWindowResize from "../../utilities/hooks/useWindowResize";
 import React from "react";
 export const About = () => {
-  const windowWidth = useWindowResize();
+  // const windowWidth = useWindowResize();
   return (
     <>
       <Stack component="article" sx={aboutStyles.banner}>

@@ -45,7 +45,7 @@ export const homeStyles = {
     border: "1px solid var(--primary-color)",
     width: "fit-content",
     color: "var(--primary-color)",
-    fontSize: "2.125rem",
+    fontSize: { xs: "2rem", sm: "2.125rem" },
   },
   solutionCardsContainer: {
     flexDirection: "row",

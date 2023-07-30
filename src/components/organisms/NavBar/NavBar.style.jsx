@@ -44,13 +44,7 @@ export const navBarStyles = {
     margin: "auto 0",
     textDecoration: "none",
   },
-  sideNavContainer: {
-    borderLeft: "1px solid black",
-  },
-  barsIcon: {
-    fontSize: "2rem",
-    margin: "10px",
-  },
+
   bannerText: {
     fontSize: { xs: "1.5rem", md: "2.5rem" },
     padding: "20px",
