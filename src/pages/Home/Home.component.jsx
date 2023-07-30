@@ -10,11 +10,11 @@ import { mediaLinks } from "../../components/organisms/SocialMedia/SocialMedia.c
 export const Home = () => {
   return (
     <>
-      <Stack component="header" sx={homeStyles.header}>
+      {/* <Stack component="header" sx={homeStyles.header}>
         <Typography component="h2" sx={homeStyles.headerTitle}>
           iMT Industrial Solution
         </Typography>
-      </Stack>
+      </Stack> */}
       <Stack component="section" sx={homeStyles.hero}>
         <Stack sx={homeStyles.heroLeft}>
           <Box sx={{ width: "60%" }}>
@@ -73,7 +73,11 @@ export const Home = () => {
       <Stack sx={homeStyles.missionSection}>
         {missionSectionCards.map((card, index) => (
           <Box key={index} sx={homeStyles.missionCardContainer}>
-            <MissionCard image={card.image} title={card.title} />
+            <MissionCard
+              image={card.image}
+              title={card.title}
+              link={card.link}
+            />
           </Box>
         ))}
       </Stack>
@@ -88,7 +92,7 @@ export const Home = () => {
         </Box>
         <Box component="div" sx={homeStyles.socialMediaLinksContainer}>
           {mediaLinks.map((link, index) => (
-            <Box key={index} component="span" sx={homeStyles.socialLink}>
+            <Box key={index} sx={homeStyles.socialLink}>
               <Typography
                 component="a"
                 href={link.link}

@@ -68,6 +68,14 @@ const NavBar = () => {
         )}
       </Stack>
       <Heighlights />
+      <Box sx={navBarStyles.bannerContainer}>
+        <Typography
+          component="h2"
+          sx={{ ...navBarStyles.bannerText, ...navBarStyles.bannerTitle }}
+        >
+          iMT Industrial Solution
+        </Typography>
+      </Box>
     </Box>
   );
 };

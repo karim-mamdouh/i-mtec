@@ -67,6 +67,7 @@ export const homeStyles = {
     display: "flex",
     margin: "20px 0",
     flexDirection: { xs: "column", md: "row" },
+    justifyContent: "space-between",
     gap: "30px",
     color: "white",
   },
@@ -84,9 +85,12 @@ export const homeStyles = {
   socialLink: {
     color: "white",
     padding: "0 20px",
-    height: "100%",
+    height: { xs: "4rem", md: "100%" },
     display: "flex",
     alignItems: "center",
+    borderTop: { xs: "1px solid white", md: "none" },
     borderRight: "1px solid white",
+    flexGrow: 1,
+    justifyContent: "center",
   },
 };

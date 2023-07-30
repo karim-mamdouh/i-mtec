@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { missionSectionStyle } from "./Mission.style";
 
-const MissionCard = ({ image, title, subtitle }) => {
+const MissionCard = ({ image, title, link }) => {
   return (
     <Stack sx={missionSectionStyle.card}>
       <Box component="figure" sx={missionSectionStyle.figure}>
@@ -16,7 +16,7 @@ const MissionCard = ({ image, title, subtitle }) => {
         ></Box>
       </Box>
       <NavLink
-        to="/"
+        to={link}
         style={{
           display: "flex",
           gap: "10px",

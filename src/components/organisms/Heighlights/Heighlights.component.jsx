@@ -22,7 +22,6 @@ const Heighlights = () => {
           sx={{ width: "100%", flexDirection: "row", display: "flex" }}
           indicators={false}
           swipe={true}
-          autoPlay={false}
           NavButton={({ onClick, className, style, next, prev }) => (
             <CarouselButton
               onClick={onClick}
@@ -32,11 +31,7 @@ const Heighlights = () => {
               prev={prev}
             />
           )}
-          // navButtonsWrapperProps={{
-          //   style: {
-          //     position: "relative",
-          //   },
-          // }}
+          animation="slide"
         >
           {heiglightData.map((item, index) => (
             <Typography component="p" key={index} sx={heighlights.carouselItem}>

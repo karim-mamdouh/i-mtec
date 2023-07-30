@@ -9,7 +9,7 @@ export const aboutStyles = {
     fontSize: { xs: "1.5rem", md: "2.5rem" },
     padding: "20px",
   },
-  bannerTitle: { textAlign: { xs: "start", md: "end" } },
+  bannerTitle: { textAlign: "center" },
   //   Logo Section
   logoSection: {
     display: "flex",

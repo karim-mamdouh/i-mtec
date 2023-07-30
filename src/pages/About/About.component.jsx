@@ -14,32 +14,18 @@ export const About = () => {
           component="h2"
           sx={{ ...aboutStyles.bannerText, ...aboutStyles.bannerTitle }}
         >
-          iMT Industrial Solution
-        </Typography>
-        <Typography
-          component="h2"
-          sx={{ ...aboutStyles.bannerText, ...aboutStyles.bannersubtitle }}
-        >
           About iMT
         </Typography>
       </Stack>
       <Stack component="section" sx={aboutStyles.logoSection}>
-        <NavLink
-          to="/"
-          style={{
-            ...aboutStyles.logoContainer,
-            width: aboutStyles.logoContainer.width(windowWidth),
-          }}
-        >
-          <Box component="figure" sx={aboutStyles.figure}>
-            <Box
-              component="img"
-              src={logo}
-              alt="i-mtec logo"
-              sx={aboutStyles.logo}
-            />
-          </Box>
-        </NavLink>
+        <Box component="figure" sx={aboutStyles.figure}>
+          <Box
+            component="img"
+            src={logo}
+            alt="i-mtec logo"
+            sx={aboutStyles.logo}
+          />
+        </Box>
       </Stack>
       <Stack component="section" sx={aboutStyles.info}>
         <Box component="ul" sx={aboutStyles.infoList}>

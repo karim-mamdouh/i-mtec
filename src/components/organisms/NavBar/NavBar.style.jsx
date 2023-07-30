@@ -51,4 +51,16 @@ export const navBarStyles = {
     fontSize: "2rem",
     margin: "10px",
   },
+  bannerText: {
+    fontSize: { xs: "1.5rem", md: "2.5rem" },
+    padding: "20px",
+    backgroundColor: "var(--primary-color)",
+    color: "white",
+  },
+  bannerTitle: { textAlign: "center" },
+  bannerContainer: {
+    width: "90%",
+    margin: "0 auto",
+    borderBottom: "1px solid white",
+  },
 };

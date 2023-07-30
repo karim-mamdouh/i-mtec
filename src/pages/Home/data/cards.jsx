@@ -49,7 +49,7 @@ export const industrialCards = [
   ),
 ];
 export const missionSectionCards = [
-  createMissionCard(card8Img, "Mission", "link 1"),
-  createMissionCard(card9Img, "Vision", "link 2"),
-  createMissionCard(card10Img, "Quality Policy", "link 3"),
+  createMissionCard(card8Img, "Mission", "/mission"),
+  createMissionCard(card9Img, "Vision", "/vision"),
+  createMissionCard(card10Img, "Quality Policy", "/quality"),
 ];
