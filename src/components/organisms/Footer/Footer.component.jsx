@@ -1,6 +1,6 @@
 import { Box, Divider, Stack, Typography } from "@mui/material";
 import React from "react";
-// import SearchForm from "../../molecules/Search/SearchForm";
+import SearchForm from "../../molecules/Search/SearchForm";
 import logo from "../../../assets/images/logo.webp";
 import { NavLink } from "react-router-dom";
 import { footerStyle } from "./Footer.style";
@@ -58,7 +58,7 @@ const Footer = () => {
           <Typography variant="p" fontSize={"22px"} marginTop={"22px"}>
             Subscribe to Receive Our Latest Tech News
           </Typography>
-          {/* <SearchForm /> */}
+          <SearchForm />
         </Stack>
         <Divider color="white" sx={{ color: "#fff", width: "100%" }} />
         <Stack

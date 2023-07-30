@@ -26,9 +26,13 @@ function SearchForm({ placeholder, color }) {
         <TextFieldInput
           sx={{
             flex: 1,
+            outline: "none",
+            border: "none",
             "& .MuiInputBase-input": {
               paddingY: "0",
               color: "#fff",
+              outline: "none",
+              border: "none",
             },
           }}
         />

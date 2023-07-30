@@ -6,6 +6,7 @@ import { cards, industrialCards, missionSectionCards } from "./data/cards";
 import IndustrialCard from "../../components/organisms/IndustrialCards/IndustrialCards.component";
 import MissionCard from "../../components/organisms/missionCard/Mission.component";
 import { mediaLinks } from "../../components/organisms/SocialMedia/SocialMedia.component";
+import SearchForm from "../../components/molecules/Search/SearchForm";
 
 export const Home = () => {
   return (
@@ -17,7 +18,12 @@ export const Home = () => {
       </Stack> */}
       <Stack component="section" sx={homeStyles.hero}>
         <Stack sx={homeStyles.heroLeft}>
-          <Box sx={{ width: "60%", marginBottom: "10px" }}>
+          <Box
+            sx={{
+              width: { xs: "80%", sm: "60%" },
+              marginBottom: { xs: "2rem", md: "10px" },
+            }}
+          >
             <Typography component="h3" sx={homeStyles.heroLeftTitle}>
               iMT News
             </Typography>
@@ -25,6 +31,13 @@ export const Home = () => {
               Everything You Need to Know About Innovation and New Technologies
             </Typography>
           </Box>
+
+          <Stack sx={{ width: { xs: "80%", sm: "60%" }, marginBottom: "10px" }}>
+            <Typography component="p" sx={{ fontSize: "1.2rem" }}>
+              Subscribe to Receive the Latest Tech News
+            </Typography>
+            <SearchForm />
+          </Stack>
         </Stack>
         <Stack component="div" sx={homeStyles.heroRight}>
           <HeroCard
