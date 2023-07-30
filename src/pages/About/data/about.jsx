@@ -9,3 +9,42 @@ export const Informations = [
   "Leaning on a strong customer network, iMT will be on the offense in placing its portfolio across several heavy weight OEMs and rapidly gaining market share in the process. With a successfully proven track record, we envisage a strong pipeline of orders’ bookings, exceeding a conservative initial Business Plan.",
   "In the business plan, we factored in an aggressive 18 months manufacturing set-up timeline for power and sensors products respectively, whereby in parallel, the team will be engaging in securing customers’ sales and orders.",
 ];
+
+export const formFields = [
+  {
+    id: "firstName",
+    name: "firstName",
+    label: "First Name *",
+    style: "half",
+  },
+  {
+    id: "lastName",
+    name: "lastName",
+    label: "Last Name *",
+    style: "half",
+  },
+  {
+    id: "phone",
+    name: "phone",
+    label: "Phone *",
+    style: "half",
+  },
+  {
+    id: "answer",
+    name: "answer",
+    label: "Add Answer here",
+    style: "half",
+  },
+  {
+    id: "repeatAnswer",
+    name: "repeatAnswer",
+    label: "Add Answer here *",
+    style: "full",
+  },
+  {
+    id: "message",
+    name: "message",
+    label: "Type your message here...",
+    style: "full",
+  },
+];

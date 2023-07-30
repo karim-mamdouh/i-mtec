@@ -6,6 +6,8 @@ export const missionSectionStyle = {
     height: "100%",
     flexDirection: "row",
     alignItems: "center",
+    maxWidth: "500px",
+    margin: "auto",
   },
   image: {
     width: "60px",
@@ -17,6 +19,6 @@ export const missionSectionStyle = {
     color: "#000",
     textDecoration: "underline",
     marginBottom: "10px",
-    fontSize: "1.5rem",
+    fontSize: { xs: "1rem", md: "1.5rem" },
   },
 };

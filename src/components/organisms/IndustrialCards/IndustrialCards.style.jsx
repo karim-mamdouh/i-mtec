@@ -4,6 +4,7 @@ export const industrialCardStyle = {
     padding: "5px",
     alignItems: "center",
     height: "100%",
+    maxWidth: "500px",
     justifyContent: "space-between",
   },
   image: {

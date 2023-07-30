@@ -1,7 +1,8 @@
 import { Button, Stack, TextField } from "@mui/material";
 import { formStyles } from "./Form.style";
+import React from "react";
 
-const Form = () => {
+const Form = ({ formControllers }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
@@ -15,14 +16,22 @@ const Form = () => {
       sx={formStyles.formContainer}
       onSubmit={handleSubmit}
     >
-      <TextField
-        id="firstName"
-        name="firstName"
-        label="First Name *"
-        variant="standard"
-        sx={{ ...formStyles.gridInput, ...formStyles.input }}
-      />
-      <TextField
+      {formControllers.map((item, index) => (
+        <TextField
+          key={index}
+          id={item.id}
+          name={item.name}
+          label={item.label}
+          variant="standard"
+          sx={
+            item.style === "half"
+              ? { ...formStyles.input, ...formStyles.gridInput }
+              : formStyles.input
+          }
+        />
+      ))}
+
+      {/* <TextField
         id="lastName"
         name="lastName"
         label="Last Name *"
@@ -59,7 +68,7 @@ const Form = () => {
         variant="standard"
         fullWidth
         sx={formStyles.input}
-      />
+      /> */}
 
       <Stack sx={formStyles.formSubmitContainer}>
         <Button type="submit" variant="contained" sx={formStyles.formSubmitBtn}>

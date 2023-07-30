@@ -51,8 +51,13 @@ export const homeStyles = {
     flexDirection: "row",
     gap: "10px",
     flexWrap: { xs: "wrap", sm: "nowrap" },
+    justifyContent: "center",
   },
-  solutionCardContainer: { width: { xs: "100%", sm: "33.33%" } },
+  solutionCardContainer: {
+    width: { xs: "100%", md: "33.33%" },
+    display: "flex",
+    justifyContent: "center",
+  },
   // Mission Section
   missionSection: {
     paddingTop: "50px",
@@ -76,14 +81,12 @@ export const homeStyles = {
     marginBottom: "10px",
   },
   socialMediaLinksContainer: {
-    borderLeft: "1px solid white",
-    borderRight: "1px solid white",
     display: "flex",
-    alignItems: "center",
+    justifyContent: "center",
   },
   socialLink: {
     color: "white",
-    padding: "0 20px",
+    padding: " 20px",
     height: "100%",
     display: "flex",
     alignItems: "center",

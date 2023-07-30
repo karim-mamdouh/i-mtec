@@ -17,7 +17,8 @@ function SearchForm({ placeholder, color }) {
           borderRadius: 0,
           display: "flex",
           alignItems: "center",
-          width: 330,
+          width: "100%",
+          maxWidth: "330px",
           height: "48px",
           backgroundColor: "transparent",
         }}
