@@ -11,8 +11,8 @@ const CarouselButton = ({ onClick, className, style, next, prev }) => {
       className={className}
       style={{ ...style, ...carouselButtonStyles.button }}
     >
-      {next && <ArrowForwardIosIcon />}
-      {prev && <ArrowBackIosNewIcon />}
+      {next && <ArrowForwardIosIcon fontSize="sm" />}
+      {prev && <ArrowBackIosNewIcon fontSize="sm" />}
     </Button>
   );
 };

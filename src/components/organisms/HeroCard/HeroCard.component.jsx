@@ -2,6 +2,7 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import PropTypes from "prop-types";
 import { heroCardStyles } from "./HeroCard.style";
+import { HashLink } from "react-router-hash-link";
 
 const HeroCard = ({ image, title }) => {
   return (
@@ -12,6 +13,7 @@ const HeroCard = ({ image, title }) => {
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        border: "1px solid white",
       }}
     >
       <Box component="section" sx={heroCardStyles.overlay}></Box>
@@ -31,7 +33,12 @@ const HeroCard = ({ image, title }) => {
           {subtitle}
         </Typography> */}
         <Button sx={heroCardStyles.button} variant="fill">
-          Read More
+          <HashLink
+            to={"/#industrial-cards"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Read More
+          </HashLink>
         </Button>
       </Stack>
     </Box>

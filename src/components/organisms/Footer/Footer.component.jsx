@@ -87,7 +87,7 @@ const Footer = () => {
                   sx={{ maxWidth: "100%" }}
                 />
               </Box>
-              <Box alignSelf={"end"} sx={{ width: { xs: "100%", md: "65%" } }}>
+              <Box sx={{ width: { xs: "100%", md: "65%" } }}>
                 <Typography style={{ ...footerStyle.title }}>iMT</Typography>
                 <Typography>Innovative Manufacturing Technologies</Typography>
               </Box>
@@ -101,52 +101,44 @@ const Footer = () => {
               }}
             />
             <Stack gap={"10px"}>
-              <Typography
-                variant="p"
-                sx={{ fontSize: "22px", marginTop: "26px", fontWeight: 600 }}
+              <NavLink
+                to="/about"
+                style={{
+                  fontSize: "22px",
+                  marginTop: "26px",
+                  fontWeight: 600,
+                  color: "white",
+                  width: "fit-content",
+                }}
               >
-                About Us
-              </Typography>
-              <Typography variant="h4" sx={footerStyle.desc}>
+                <Typography variant="p" component="p">
+                  About Us
+                </Typography>
+              </NavLink>
+              {/* <Typography variant="h4" sx={footerStyle.desc}>
                 I'm a paragraph. Click here to add your own text and edit me.
                 I'm a great place for you to tell a story and let your users
                 know a little more about you.
-              </Typography>
+              </Typography> */}
             </Stack>
           </Stack>
           <Stack gap={"10px"} sx={footerStyle.linksContainer}>
             <Box xs={footerStyle.linksBox}>
-              {footerLinks.map(
-                (link, index) =>
-                  footerLinks.indexOf(link) < 4 && (
-                    <NavLink
-                      key={index}
-                      to={link.path}
-                      style={{
-                        ...footerStyle.link,
-                      }}
-                    >
-                      {link.name}
-                    </NavLink>
-                  )
-              )}
+              {footerLinks.map((link, index) => (
+                <NavLink
+                  key={index}
+                  to={link.path}
+                  style={{
+                    ...footerStyle.link,
+                  }}
+                >
+                  {link.name}
+                </NavLink>
+              ))}
             </Box>
-            <Box xs={footerLinks.linksBox}>
-              {footerLinks.map(
-                (link, index) =>
-                  footerLinks.indexOf(link) >= 4 && (
-                    <NavLink
-                      key={index}
-                      to={link.path}
-                      style={{
-                        ...footerStyle.link,
-                      }}
-                    >
-                      {link.name}
-                    </NavLink>
-                  )
-              )}
-            </Box>
+            <Typography component="p" variant="p">
+              &copy; {new Date().getFullYear()} by iMT
+            </Typography>
           </Stack>
         </Stack>
       </Stack>

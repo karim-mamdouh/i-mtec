@@ -6,7 +6,7 @@ export const missionSectionStyle = {
     height: "100%",
     flexDirection: "row",
     alignItems: "center",
-    maxWidth: "500px",
+    // maxWidth: "500px",
     margin: "auto",
   },
   image: {

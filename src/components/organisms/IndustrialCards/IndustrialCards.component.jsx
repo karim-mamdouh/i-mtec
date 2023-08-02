@@ -2,8 +2,10 @@ import { Box, Button, Stack, Typography } from "@mui/material";
 import PropTypes from "prop-types";
 import React from "react";
 import { industrialCardStyle } from "./IndustrialCards.style";
+import { HashLink } from "react-router-hash-link";
 
-const IndustrialCard = ({ image, title, subtitle }) => {
+const IndustrialCard = ({ image, title, subtitle, id }) => {
+  const cardId = `/industrial-solutions/#${id}`;
   return (
     <Stack sx={industrialCardStyle.card}>
       <Box component="figure" sx={industrialCardStyle.figure}>
@@ -24,7 +26,12 @@ const IndustrialCard = ({ image, title, subtitle }) => {
         </Typography>
       </Typography>
       <Button variant="fill" sx={industrialCardStyle.button}>
-        Read More
+        <HashLink
+          to={cardId}
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          Read More
+        </HashLink>
       </Button>
     </Stack>
   );

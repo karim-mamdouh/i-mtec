@@ -11,6 +11,7 @@ import { sharedImages } from "../../../common/images/sharedImages";
 const navLinks = [
   createNavLink("Home", "/"),
   createNavLink("About", "/about"),
+  createNavLink("Industrial Solutions", "/industrial-solutions"),
   createNavLink("Contact Us", "/contact-us"),
 ];
 

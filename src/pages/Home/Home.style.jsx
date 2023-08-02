@@ -29,7 +29,8 @@ export const homeStyles = {
   heroLeftTitle: {
     fontSize: { xs: "1.5rem", sm: "3.45rem" },
     lineHeight: "3.5rem",
-    marginBottom: "10px",
+    marginBottom: "1.5rem",
+    whiteSpace: "pre-wrap",
   },
   heroRight: {
     width: { xs: "100%", sm: "60%" },

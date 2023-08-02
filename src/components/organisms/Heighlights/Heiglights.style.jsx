@@ -9,10 +9,11 @@ export const heighlights = {
   headerTitle: {
     backgroundColor: "var(--primary-color)",
     padding: "10px 20px ",
-    fontSize: "1.5rem",
+    fontSize: "1.2rem",
     textAlign: "center",
     minHeight: "100%",
     borderBottom: "3px solid black",
+    width: { lg: "11%", xs: "auto" },
   },
   headerCarousel: {
     backgroundColor: "black",

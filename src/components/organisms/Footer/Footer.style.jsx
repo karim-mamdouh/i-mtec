@@ -7,7 +7,7 @@ export const footerStyle = {
     width: { xs: "100%", md: "50%" },
     gap: "15px",
     height: "fit-content",
-    alignSelf: { xs: "start", md: "end" },
+    alignSelf: "start",
   },
   title: {
     letterSpacing: "10px",
@@ -24,7 +24,8 @@ export const footerStyle = {
     color: "#fff",
     display: "block",
     marginBottom: "15px",
-    padding: "0 20px",
+    // padding: "0 20px",
+    width: "fit-content",
   },
   desc: {
     fontSize: "16px",

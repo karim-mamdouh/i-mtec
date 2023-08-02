@@ -74,11 +74,17 @@ export const Home = () => {
           </Stack>
         </Stack>
       </Stack>
-      <Stack sx={homeStyles.solutionsTitleContainer}>
-        <Typography component="h4" variant="h4" sx={homeStyles.solutionsTitle}>
-          Industrial Solutions
-        </Typography>
-      </Stack>
+      <div id="industrial-cards">
+        <Stack sx={homeStyles.solutionsTitleContainer}>
+          <Typography
+            component="h4"
+            variant="h4"
+            sx={homeStyles.solutionsTitle}
+          >
+            Industrial Solutions
+          </Typography>
+        </Stack>
+      </div>
       <Stack sx={homeStyles.solutionCardsContainer}>
         {industrialCards.map((card, index) => (
           <Box key={index} sx={homeStyles.solutionCardContainer}>
@@ -86,6 +92,7 @@ export const Home = () => {
               image={card.image}
               title={card.title}
               subtitle={card.subtitle}
+              id={card.id}
             />
           </Box>
         ))}

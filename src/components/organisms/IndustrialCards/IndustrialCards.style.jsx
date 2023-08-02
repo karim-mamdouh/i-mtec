@@ -26,7 +26,7 @@ export const industrialCardStyle = {
   button: {
     width: "fit-content",
     borderRadius: "0",
-    margin: "5px auto 5px 5px",
+    margin: "5px auto 5px 10px",
   },
   readMore: {
     fontSize: "0.75rem",
