@@ -5,6 +5,7 @@ import { Informations, formFields } from "./data/about";
 import logo from "../../assets/images/logo.webp";
 // import useWindowResize from "../../utilities/hooks/useWindowResize";
 import React from "react";
+import { sharedImages } from "../../common/images/sharedImages";
 export const About = () => {
   // const windowWidth = useWindowResize();
   return (
@@ -21,7 +22,7 @@ export const About = () => {
         <Box component="figure" sx={aboutStyles.figure}>
           <Box
             component="img"
-            src={logo}
+            src={sharedImages.about}
             alt="i-mtec logo"
             sx={aboutStyles.logo}
           />
@@ -37,12 +38,20 @@ export const About = () => {
         </Box>
       </Stack>
       <Stack sx={aboutStyles.formTitleContainer}>
-        <Typography component="h4" sx={aboutStyles.formTitle}>
+        <Typography component="h4" variant="h4" sx={aboutStyles.formTitle}>
           Become a Partner
         </Typography>
       </Stack>
       <Stack component="section" sx={aboutStyles.formSection}>
         <Form formControllers={formFields}></Form>
+        <Box component="figure" sx={aboutStyles.partnerFigure}>
+          <Box
+            component="img"
+            src={sharedImages.aboutMeeting}
+            sx={aboutStyles.image}
+            alt="meeting"
+          ></Box>
+        </Box>
       </Stack>
     </>
   );

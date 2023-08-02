@@ -14,7 +14,10 @@ export const aboutStyles = {
   logoSection: {
     display: "flex",
     alignItems: "center",
-    padding: "40px 0",
+    padding: "1.25rem 0",
+  },
+  figure: {
+    width: { xs: "70%", sm: "20%" },
   },
   logoContainer: {
     display: "flex",
@@ -30,7 +33,12 @@ export const aboutStyles = {
     backgroundColor: "var(--ternary-color)",
   },
   infoList: { listStyle: "none", padding: "20px" },
-  infoPoint: { fontSize: "1.5rem", marginBottom: "30px", lineHeight: "1.5" },
+  infoPoint: {
+    fontSize: "1.5rem",
+    marginBottom: "30px",
+    lineHeight: "1.5",
+    textAlign: "justify",
+  },
   headerCarousel: {
     backgroundColor: "var(--secondary-color)",
     fontSize: "1.5rem",
@@ -50,9 +58,18 @@ export const aboutStyles = {
     width: "fit-content",
     color: "var(--primary-color)",
     fontSize: "2.125rem",
+    textAlign: "center",
   },
   formSection: {
-    display: "flex",
     alignItems: "center",
+    justifyContent: "space-between",
+    flexDirection: { xs: "column", md: "row" },
+  },
+  partnerFigure: {
+    width: { xs: "100%", md: "40%" },
+    marginBottom: "2.5rem",
+  },
+  image: {
+    maxWidth: "100%",
   },
 };
