@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/i-mtec/static/css/main.84816f2d.css",
-    "main.js": "/i-mtec/static/js/main.9a95c43c.js",
+    "main.css": "/i-mtec/static/css/main.f4461a76.css",
+    "main.js": "/i-mtec/static/js/main.83f61c21.js",
     "static/js/787.d9901b45.chunk.js": "/i-mtec/static/js/787.d9901b45.chunk.js",
-    "static/media/img5.webp": "/i-mtec/static/media/img5.a75b81e219af5b5c4672.webp",
-    "static/media/img6.webp": "/i-mtec/static/media/img6.b289b753f7ecdd043657.webp",
-    "static/media/img1.webp": "/i-mtec/static/media/img1.bfc518b552eed4d1a13e.webp",
-    "static/media/img2.webp": "/i-mtec/static/media/img2.051e08e7d13cbc570598.webp",
-    "static/media/img4.webp": "/i-mtec/static/media/img4.ad7dfa10e2a90ac2707c.webp",
-    "static/media/img7.webp": "/i-mtec/static/media/img7.d82becda571a0df6d54d.webp",
+    "static/media/shutterstock_2307295835.jpg": "/i-mtec/static/media/shutterstock_2307295835.f9e819d50e40fe4f172c.jpg",
+    "static/media/shutterstock_1973933759.jpg": "/i-mtec/static/media/shutterstock_1973933759.2afcb5ace11c68ab1ed5.jpg",
+    "static/media/shutterstock_1105824368.jpg": "/i-mtec/static/media/shutterstock_1105824368.84cc4aeeaa8adbe89ba6.jpg",
+    "static/media/shutterstock_2114855201.jpg": "/i-mtec/static/media/shutterstock_2114855201.7a37bb4566d39033eef1.jpg",
+    "static/media/Nizar EBike.jpg": "/i-mtec/static/media/Nizar EBike.0f8acfcab0aae3ed09c1.jpg",
+    "static/media/shutterstock_2219825287.jpg": "/i-mtec/static/media/shutterstock_2219825287.205d5418e9af34bbdc82.jpg",
+    "static/media/vision-nbg.png": "/i-mtec/static/media/vision-nbg.c5a7f26346fbd27b58fd.png",
+    "static/media/Mission-Red.png": "/i-mtec/static/media/Mission-Red.2b850b8a47cb5e61325f.png",
+    "static/media/—Pngtree—about our company interface_7390103.png": "/i-mtec/static/media/—Pngtree—about our company interface_7390103.93092959ad5de282989b.png",
+    "static/media/Values-Nobg.png": "/i-mtec/static/media/Values-Nobg.6e7fae32a61959f561f8.png",
+    "static/media/MicrosoftTeams-image (14).png": "/i-mtec/static/media/MicrosoftTeams-image (14).a4ecb123ace52b778547.png",
     "static/media/logo.webp": "/i-mtec/static/media/logo.0b08aee4af11dd59c86e.webp",
-    "static/media/img9.webp": "/i-mtec/static/media/img9.a61d6ac17f8d32f3430b.webp",
-    "static/media/img8.webp": "/i-mtec/static/media/img8.f1a105a2049ccd6e61d6.webp",
-    "static/media/img10.webp": "/i-mtec/static/media/img10.a9c5534fb720b3cb25d7.webp",
     "static/media/background.webp": "/i-mtec/static/media/background.c08792e6e517868f9690.webp",
     "index.html": "/i-mtec/index.html",
-    "main.84816f2d.css.map": "/i-mtec/static/css/main.84816f2d.css.map",
-    "main.9a95c43c.js.map": "/i-mtec/static/js/main.9a95c43c.js.map",
+    "main.f4461a76.css.map": "/i-mtec/static/css/main.f4461a76.css.map",
+    "main.83f61c21.js.map": "/i-mtec/static/js/main.83f61c21.js.map",
     "787.d9901b45.chunk.js.map": "/i-mtec/static/js/787.d9901b45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84816f2d.css",
-    "static/js/main.9a95c43c.js"
+    "static/css/main.f4461a76.css",
+    "static/js/main.83f61c21.js"
   ]
 }
