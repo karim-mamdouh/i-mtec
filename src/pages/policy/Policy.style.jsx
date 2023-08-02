@@ -11,4 +11,7 @@ export const policiesStyles = {
   image: {
     maxWidth: "100%",
   },
+  figure: {
+    width: { xs: "50%", sm: "20%" },
+  },
 };

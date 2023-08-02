@@ -1,31 +1,30 @@
+import { qualityImages } from "../../../common/images";
 import { createPolicy } from "../../../utilities/factories";
-import misson from "../../../assets/images/img8.webp";
-import vision from "../../../assets/images/img9.webp";
-import quality from "../../../assets/images/img10.webp";
 
 export const policies = {
   misson: createPolicy(
+    "Our Mission: Your Success!",
     [
-      "“Our mission is to leverage the latest innovative technologies and the expertise of our team to drive business solutions that help our customers increase efficiency, reduce costs, promote sustainability, and create value for their stakeholders”.",
-      "We aim to stay at the forefront of technological innovation, delivering exceptional customer service, building long-term partnerships, and developing customized solutions that are tailored to the customer’s unique needs and deliver measurable results.",
-      "We are committed to financial discipline, transparency, and accountability, and we strive to create long-term value for all our investors and stakeholders, providing a strong return on investment while building a sustainable and socially responsible business.",
-      "We strive to continuously grow our business globally by consistently exceeding expectations of our:",
+      '"Our mission at iMT is to drive business solutions that help customers increase efficiency, reduce costs, promote sustainability, and create value for their stakeholders. Our aim is to deliver measurable results that help our customers achieve their objectives and strong returns for our investors"',
     ],
-    misson
+    qualityImages.mission
   ),
   vision: createPolicy(
+    "Your Vision, Our Expertise, Exceptional Results",
     [
-      "Our vision at innovative manufacturing technologies to our customers is to be a trusted partner, providing them with innovative solutions that help them achieve their business goals, optimize their operations, reduce costs, and improve their environmental footprint, while delivering strong returns to our investors.",
-      "We aim to generate consistent revenue growth, maximize profitability, and manage risk effectively, while maintaining a strong balance sheet. We strongly believe that by providing solutions that help our customers stay competitive, we can create long-term value for our investors.",
-      "We are committed to financial discipline, transparency, and accountability, and we strive to create long-term value for all our investors and stakeholders, providing a strong return on investment while building a sustainable and socially responsible business.",
+      '"Our vision at iMT is to be the preferred partner for our customers and a global leader in providing innovative, sustainable, and customer-centric solutions in the fields of contactless sensors and power products. We are committed to fostering a culture of innovation and creating a sustainable future for our customers, employees, and communities."',
     ],
-    vision
+    qualityImages.vision
   ),
   quality: createPolicy(
+    "Quality is not just a goal, it's a way of life",
     [
-      "Innovative Manufacturing Technologies is driven and dedicated to meet customer satisfaction by providing products on-time with the highest quality standard at a reasonable price through employees’ commitment and continuous improvement aligned with Quality Management System",
-      "We are committed to financial discipline, transparency, and accountability, and we strive to create long-term value for all our investors and stakeholders, providing a strong return on investment while building a sustainable and socially responsible business.",
+      "At iMT, our commitment to quality is at the forefront of everything we do. Our goal is to consistently deliver products that meet or exceed our customer's expectations, on time and with exceptional service.",
+      "We are dedicated to maintaining a Quality Management System that is aligned with ISO 9001, IATF16949, and other applicable industry standards such as Tisax, ISO14001, ISO45001, and VDA 6.3. Continuous Improvement is at the heart of our business, and we are continually striving to improve our processes, products, and services. ",
+      "We are committed to providing our employees with the necessary training and resources to ensure that they are qualified to perform their duties to the highest standards. Our employees are encouraged to take ownership of their work and to contribute to the continuous improvement of our processes.",
+      "Our commitment to quality extends beyond our products and services. We are committed to operating in an environmentally responsible and sustainable manner, minimizing our impact on the environment and complying with all applicable regulations and laws.",
+      "We believe that our commitment to quality will result in customer satisfaction, and we are committed to fostering long-lasting relationships with our customers based on trust, integrity, and mutual respect.",
     ],
-    quality
+    qualityImages.quality
   ),
 };

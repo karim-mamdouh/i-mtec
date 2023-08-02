@@ -1,5 +1,4 @@
 import { Box, Stack, Typography } from "@mui/material";
-import logo from "../../../assets/images/logo.webp";
 import React from "react";
 import { navBarStyles } from "./NavBar.style";
 import { NavLink } from "react-router-dom";
@@ -7,6 +6,7 @@ import { createNavLink } from "../../../utilities/factories";
 import useWindowResize from "../../../utilities/hooks/useWindowResize";
 import Heighlights from "../Heighlights/Heighlights.component";
 import SideNav from "../SideNav/SideNav.component";
+import { sharedImages } from "../../../common/images/sharedImages";
 
 const navLinks = [
   createNavLink("Home", "/"),
@@ -34,7 +34,7 @@ const NavBar = () => {
           <Box component="figure" sx={navBarStyles.figure}>
             <Box
               component="img"
-              src={logo}
+              src={sharedImages.logo}
               alt="i-mtec logo"
               sx={navBarStyles.logo}
             />
@@ -44,7 +44,7 @@ const NavBar = () => {
         {/* Title */}
         {windowWidth >= 768 && (
           <Stack sx={navBarStyles.title}>
-            <Typography variant="h1">
+            <Typography variant="h1" component="h1">
               iNNOVATiVE MANUFACTURiNG TECHNOLOGiES
             </Typography>
           </Stack>
@@ -66,14 +66,6 @@ const NavBar = () => {
         )}
       </Stack>
       <Heighlights />
-      <Box sx={navBarStyles.bannerContainer}>
-        <Typography
-          component="h2"
-          sx={{ ...navBarStyles.bannerText, ...navBarStyles.bannerTitle }}
-        >
-          iMT Industrial Solution
-        </Typography>
-      </Box>
     </Box>
   );
 };

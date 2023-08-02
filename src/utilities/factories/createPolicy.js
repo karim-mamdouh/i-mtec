@@ -1,1 +1,1 @@
-export const createPolicy = (text, image) => ({ text, image });
+export const createPolicy = (title, text, image) => ({ title, text, image });

@@ -20,7 +20,7 @@ export const heroCardStyles = {
     color: "white",
     height: "100%",
     padding: "15px",
-    justifyContent: "space-evenly",
+    justifyContent: "space-between",
   },
   cardImgContainer: {
     fontSize: 0,
@@ -29,6 +29,9 @@ export const heroCardStyles = {
     marginTop: "1rem",
     width: "fit-content",
   },
-  title: { fontSize: { xs: "1rem", md: "1.5rem" } },
+  title: {
+    fontSize: { xs: "1rem", md: "1.5rem" },
+    textShadow: "rgba(0, 0, 0, 0.298039) 0px 5px 0px",
+  },
   subtitle: { fontSize: { xs: "1rem", md: "1.25rem" } },
 };

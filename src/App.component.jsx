@@ -8,12 +8,14 @@ import Footer from "./components/organisms/Footer/Footer.component";
 import { Stack } from "@mui/material";
 import { appStyles } from "./App.style";
 import SocialMedia from "./components/organisms/SocialMedia/SocialMedia.component";
+import { ScrollToTop } from "./components/atoms";
 
 const customTheme = theme;
 
 const App = () => {
   return (
     <ThemeProvider theme={customTheme}>
+      <ScrollToTop />
       <NavBar />
       <Stack component="main" sx={appStyles}>
         <AppRoute />

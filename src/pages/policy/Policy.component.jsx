@@ -1,15 +1,14 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
 import { policies } from "./data/policy";
 import { policiesStyles } from "./Policy.style";
+import { Banner } from "../../components/atoms";
 
 export const Policy = () => {
   const [policy, setPolicy] = useState();
 
   useEffect(() => {
     const url = window.location.href;
-    console.log(url);
     if (url.includes("vision")) {
       setPolicy(policies.vision);
     } else if (url.includes("mission")) {
@@ -19,23 +18,24 @@ export const Policy = () => {
     }
   }, []);
 
-  console.log(policy);
-
   return (
-    <Stack component="section" sx={policiesStyles.container}>
-      <Box component="figure">
-        <Box
-          component="img"
-          src={policy?.image}
-          sx={policiesStyles.image}
-        ></Box>
-      </Box>
+    <>
+      <Banner title={policy?.title} />
+      <Stack component="section" sx={policiesStyles.container}>
+        <Box component="figure" sx={policiesStyles.figure}>
+          <Box
+            component="img"
+            src={policy?.image}
+            sx={policiesStyles.image}
+          ></Box>
+        </Box>
 
-      {policy?.text?.map((text) => (
-        <Typography component="p" sx={policiesStyles.text}>
-          {text}
-        </Typography>
-      ))}
-    </Stack>
+        {policy?.text?.map((text) => (
+          <Typography component="p" variant="p" sx={policiesStyles.text}>
+            {text}
+          </Typography>
+        ))}
+      </Stack>
+    </>
   );
 };

@@ -45,6 +45,7 @@ export const homeStyles = {
     border: "1px solid var(--primary-color)",
     width: "fit-content",
     color: "var(--primary-color)",
+    textAlign: "center",
     fontSize: { xs: "2rem", sm: "2.125rem" },
   },
   solutionCardsContainer: {
@@ -65,14 +66,17 @@ export const homeStyles = {
     gap: "0",
     flexWrap: { xs: "wrap", sm: "nowrap" },
   },
-  missionCardContainer: { width: { xs: "100%", sm: "33.33%" } },
+  missionCardContainer: {
+    width: { xs: "100%", sm: "33.33%" },
+    height: "6.25rem",
+  },
   // Social Media Section
   socialMediaSection: {
     backgroundColor: "var(--primary-color)",
     display: "flex",
     margin: "20px 0",
     flexDirection: { xs: "column", md: "row" },
-    justifyContent: "space-between",
+    // justifyContent: "space-between",
     gap: "30px",
     color: "white",
   },

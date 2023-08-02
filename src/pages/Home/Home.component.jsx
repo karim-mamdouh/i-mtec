@@ -24,16 +24,24 @@ export const Home = () => {
               marginBottom: { xs: "2rem", md: "10px" },
             }}
           >
-            <Typography component="h3" sx={homeStyles.heroLeftTitle}>
+            <Typography
+              component="h3"
+              sx={homeStyles.heroLeftTitle}
+              variant="h3"
+            >
               iMT News
             </Typography>
-            <Typography component="p">
+            <Typography component="p" variant="p">
               Everything You Need to Know About Innovation and New Technologies
             </Typography>
           </Box>
 
           <Stack sx={{ width: { xs: "80%", sm: "60%" }, marginBottom: "10px" }}>
-            <Typography component="p" sx={{ fontSize: "1.2rem" }}>
+            <Typography
+              component="p"
+              variant="p"
+              sx={{ fontSize: "1.2rem", marginBottom: "10px" }}
+            >
               Subscribe to Receive the Latest Tech News
             </Typography>
             <SearchForm />
@@ -67,7 +75,7 @@ export const Home = () => {
         </Stack>
       </Stack>
       <Stack sx={homeStyles.solutionsTitleContainer}>
-        <Typography component="h4" sx={homeStyles.solutionsTitle}>
+        <Typography component="h4" variant="h4" sx={homeStyles.solutionsTitle}>
           Industrial Solutions
         </Typography>
       </Stack>
@@ -100,8 +108,12 @@ export const Home = () => {
           <Typography component="h3" sx={homeStyles.socialMediaTitle}>
             24 / 7 Updates Via Social Media
           </Typography>
-          <Typography component="h5">Join our tech community. </Typography>
-          <Typography component="h5">Follow us today. </Typography>
+          <Typography component="h5" variant="h5">
+            Join our tech community.{" "}
+          </Typography>
+          <Typography component="h5" variant="h5">
+            Follow us today.{" "}
+          </Typography>
         </Box>
         <Box component="div" sx={homeStyles.socialMediaLinksContainer}>
           {mediaLinks.map((link, index) => (

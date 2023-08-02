@@ -1,5 +1,4 @@
-export const createHeroCard = (image, title, subtitle) => ({
+export const createHeroCard = (image, title) => ({
   image,
   title,
-  subtitle,
 });

@@ -13,6 +13,7 @@ export const missionSectionStyle = {
     width: "60px",
     objectFit: "cover",
     objectPosition: "50% 50%",
+    maxHeight: "60px",
   },
   title: {
     fontWeight: "bold",

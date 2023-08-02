@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { heroCardStyles } from "./HeroCard.style";
 
-const HeroCard = ({ image, title, subtitle }) => {
+const HeroCard = ({ image, title }) => {
   return (
     <Box
       component="div"
@@ -11,6 +11,7 @@ const HeroCard = ({ image, title, subtitle }) => {
         ...heroCardStyles.card,
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       <Box component="section" sx={heroCardStyles.overlay}></Box>
@@ -23,12 +24,12 @@ const HeroCard = ({ image, title, subtitle }) => {
         ></Box>
       </Box> */}
       <Stack component="div" sx={heroCardStyles.cardContent}>
-        <Typography component="h3" sx={heroCardStyles.title}>
+        <Typography component="h3" variant="h3" sx={heroCardStyles.title}>
           {title}
         </Typography>
-        <Typography component="p" sx={heroCardStyles.subtitle}>
+        {/* <Typography component="p" sx={heroCardStyles.subtitle}>
           {subtitle}
-        </Typography>
+        </Typography> */}
         <Button sx={heroCardStyles.button} variant="fill">
           Read More
         </Button>

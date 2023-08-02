@@ -14,11 +14,14 @@ const IndustrialCard = ({ image, title, subtitle }) => {
           sx={industrialCardStyle.image}
         ></Box>
       </Box>
-      <Typography component="h6" sx={industrialCardStyle.title}>
+      <Typography component="h6" variant="h6" sx={industrialCardStyle.title}>
         {title}
       </Typography>
-      <Typography component="p" sx={industrialCardStyle.subtitle}>
+      <Typography component="p" variant="p" sx={industrialCardStyle.subtitle}>
         {subtitle}
+        <Typography component="span" sx={industrialCardStyle.readMore}>
+          ...Read More
+        </Typography>
       </Typography>
       <Button variant="fill" sx={industrialCardStyle.button}>
         Read More

@@ -2,24 +2,26 @@ import { createTheme } from "@mui/material";
 
 export const theme = createTheme({
   typography: {
-    fontFamily: ["EB Garamond", "sans-serif"].join(","),
+    fontFamily: ["Lato", "sans-serif"].join(","),
 
     h1: {
-      fontWeight: 500,
+      fontWeight: 700,
       fontSize: "1.25rem",
     },
     h2: {
       fontWeight: 700,
     },
     h3: {
-      fontWeight: 600,
+      fontWeight: 700,
     },
     h4: {
-      fontWeight: 500,
+      fontWeight: 700,
     },
     p: {
       fontFamily: ["Lato", "sans-serif"].join(","),
       fontWeight: 400,
+      textAlign: "justify",
+      // lineHeight: "2rem",
     },
     button: {
       fontFamily: ["EB Garamond", "sans-serif"].join(","),
@@ -84,13 +86,11 @@ export const theme = createTheme({
           props: { variant: "fill" },
           style: {
             "&:hover": {
-              backgroundColor: "transparent",
-              color: "white",
-              border: "1px solid white",
+              backgroundColor: "#E07682",
             },
             color: "white",
             fontWeight: 400,
-            borderRadius: "8px",
+            borderRadius: "0",
             backgroundColor: "#d00b22",
             fontSize: "1rem",
           },
