@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/i-mtec/static/css/main.e4ea5fc3.css",
-    "main.js": "/i-mtec/static/js/main.c4846c69.js",
+    "main.css": "/i-mtec/static/css/main.1503ac7c.css",
+    "main.js": "/i-mtec/static/js/main.9f9314ad.js",
     "static/js/787.d9901b45.chunk.js": "/i-mtec/static/js/787.d9901b45.chunk.js",
     "static/media/shutterstock_2307295835.jpg": "/i-mtec/static/media/shutterstock_2307295835.9b6f4e1d644a1d5a2bfa.jpg",
     "static/media/shutterstock_2114855201.jpg": "/i-mtec/static/media/shutterstock_2114855201.97f3e54025a4f2e3e085.jpg",
+    "static/media/1.jpg": "/i-mtec/static/media/1.ee8d102959bd9b3d866c.jpg",
     "static/media/shutterstock_1105824368.jpg": "/i-mtec/static/media/shutterstock_1105824368.99b0916283df7ac7941d.jpg",
     "static/media/shutterstock_1973933759.jpg": "/i-mtec/static/media/shutterstock_1973933759.a959595db8232afa69ff.jpg",
     "static/media/Nizar EBike.jpg": "/i-mtec/static/media/Nizar EBike.79cd30b079dc5eb0e608.jpg",
+    "static/media/3.jpg": "/i-mtec/static/media/3.0cd0fdc88d5a9b3be384.jpg",
     "static/media/shutterstock_2219825287.jpg": "/i-mtec/static/media/shutterstock_2219825287.0cd0fdc88d5a9b3be384.jpg",
+    "static/media/2.jpg": "/i-mtec/static/media/2.90f5c4d1045e2e004f3a.jpg",
     "static/media/vision-nbg.png": "/i-mtec/static/media/vision-nbg.c5a7f26346fbd27b58fd.png",
     "static/media/Mission-Red.png": "/i-mtec/static/media/Mission-Red.2b850b8a47cb5e61325f.png",
     "static/media/—Pngtree—about our company interface_7390103.png": "/i-mtec/static/media/—Pngtree—about our company interface_7390103.d871c28626a615f57bf9.png",
@@ -17,12 +20,12 @@
     "static/media/logo.webp": "/i-mtec/static/media/logo.0b08aee4af11dd59c86e.webp",
     "static/media/background.webp": "/i-mtec/static/media/background.c08792e6e517868f9690.webp",
     "index.html": "/i-mtec/index.html",
-    "main.e4ea5fc3.css.map": "/i-mtec/static/css/main.e4ea5fc3.css.map",
-    "main.c4846c69.js.map": "/i-mtec/static/js/main.c4846c69.js.map",
+    "main.1503ac7c.css.map": "/i-mtec/static/css/main.1503ac7c.css.map",
+    "main.9f9314ad.js.map": "/i-mtec/static/js/main.9f9314ad.js.map",
     "787.d9901b45.chunk.js.map": "/i-mtec/static/js/787.d9901b45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4ea5fc3.css",
-    "static/js/main.c4846c69.js"
+    "static/css/main.1503ac7c.css",
+    "static/js/main.9f9314ad.js"
   ]
 }
