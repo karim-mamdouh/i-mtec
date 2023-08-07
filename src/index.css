@@ -22,7 +22,15 @@ body,
 }
 
 :root {
-  --primary-color: #d00b22;
+  /* --primary-color: #d00b22; */
+  --primary-color: #ee1b24;
   --secondary-color: #000;
   --ternary-color: #f5f5f5;
+}
+
+input {
+  outline: 0 !important;
+  border: unset !important;
+  border-color: transparent !important;
+  border-width: 0 !important;
 }

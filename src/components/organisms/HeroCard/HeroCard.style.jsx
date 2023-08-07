@@ -4,22 +4,25 @@ export const heroCardStyles = {
     width: "100%",
     height: "100%",
     backgroundColor: "#000",
-    opacity: "0.5",
+    opacity: "0.35",
   },
   card: {
     position: "relative",
     height: "100%",
-    minHeight: { xs: "20rem", sm: "30rem" },
+    border: "1px solid white",
+
+    // minHeight: { xs: "20rem", sm: "30rem" },
   },
   cardImg: {
     maxWidth: "100%",
   },
   cardContent: {
-    position: "relative",
+    position: "absolute",
+    top: 0,
     zIndex: "2",
     color: "white",
     height: "100%",
-    padding: "15px",
+    padding: { xs: "7px", sm: "15px" },
     justifyContent: "space-between",
   },
   cardImgContainer: {
@@ -27,7 +30,9 @@ export const heroCardStyles = {
   },
   button: {
     marginTop: "1rem",
+    fontSize: { xs: "12px", sm: "16px" },
     width: "fit-content",
+    padding: { xs: "6px", sm: "6px 16px" },
   },
   title: {
     fontSize: { xs: "1rem", md: "1.5rem" },

@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { ContactUs } from "../../pages/ContactUs/ContactUs.component";
 import { About, Home, Policy } from "../../pages/index";
 import IndustrialSolutions from "../../pages/IndustrialSolutions/IndustrialSolutions.component";
+import Career from "../../pages/Career/Career.component";
 
 const AppRoute = () => {
   return (
@@ -17,6 +18,7 @@ const AppRoute = () => {
         element={<IndustrialSolutions />}
         path="/industrial-solutions"
       ></Route>
+      <Route element={<Career />} path="/career"></Route>
     </Routes>
   );
 };

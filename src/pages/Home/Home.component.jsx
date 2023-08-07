@@ -6,7 +6,8 @@ import { cards, industrialCards, missionSectionCards } from "./data/cards";
 import IndustrialCard from "../../components/organisms/IndustrialCards/IndustrialCards.component";
 import MissionCard from "../../components/organisms/missionCard/Mission.component";
 import { mediaLinks } from "../../components/organisms/SocialMedia/SocialMedia.component";
-import SearchForm from "../../components/molecules/Search/SearchForm";
+import SearchForm from "../../components/molecules/Search/SearchForm.component";
+import { Banner } from "../../components/atoms";
 
 export const Home = () => {
   return (
@@ -16,6 +17,11 @@ export const Home = () => {
           iMT Industrial Solution
         </Typography>
       </Stack> */}
+      <Banner
+        title="Innovative Manufacturing. Exceptional Results!"
+        sx={{ borderBottom: "none" }}
+        fontSize={{ xs: "1rem", sm: "1.875rem" }}
+      />
       <Stack component="section" sx={homeStyles.hero}>
         <Stack sx={homeStyles.heroLeft}>
           <Box

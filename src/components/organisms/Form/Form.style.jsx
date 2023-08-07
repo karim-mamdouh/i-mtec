@@ -3,16 +3,18 @@ export const formStyles = {
     display: "flex",
     flexWrap: "wrap",
     flexDirection: "row",
-    gap: "20px",
+    gap: "2.5rem",
     maxWidth: "500px",
     justifyContent: "space-between",
   },
   input: {
     marginTop: "10px",
     width: "100%",
+    borderBottomColor: "var(--primary-color)",
+    fontWeight: 300,
   },
   gridInput: {
-    width: { xs: "100%", md: "45%" },
+    width: { xs: "100%", md: "40%" },
   },
   formSubmitContainer: {
     width: "100%",
@@ -23,6 +25,10 @@ export const formStyles = {
   },
   formSubmitBtn: {
     borderRadius: "0",
-    padding: "15px 30px",
+    // padding: "15px 30px",
+    width: { xs: "50%", sm: "35%" },
+    margin: "1.5rem auto",
+    fontWeight: 700,
+    fontSize: "1.1875rem",
   },
 };

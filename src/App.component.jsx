@@ -21,7 +21,7 @@ const App = () => {
         <AppRoute />
       </Stack>
       <Footer />
-      <SocialMedia />
+      {/* <SocialMedia /> */}
     </ThemeProvider>
   );
 };

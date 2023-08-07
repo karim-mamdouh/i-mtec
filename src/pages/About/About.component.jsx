@@ -6,18 +6,12 @@ import logo from "../../assets/images/logo.webp";
 // import useWindowResize from "../../utilities/hooks/useWindowResize";
 import React from "react";
 import { sharedImages } from "../../common/images/sharedImages";
+import { Banner } from "../../components/atoms";
 export const About = () => {
   // const windowWidth = useWindowResize();
   return (
     <>
-      <Stack component="article" sx={aboutStyles.banner}>
-        <Typography
-          component="h2"
-          sx={{ ...aboutStyles.bannerText, ...aboutStyles.bannerTitle }}
-        >
-          About iMT
-        </Typography>
-      </Stack>
+      <Banner title="About iMT" />
       <Stack component="section" sx={aboutStyles.logoSection}>
         <Box component="figure" sx={aboutStyles.figure}>
           <Box

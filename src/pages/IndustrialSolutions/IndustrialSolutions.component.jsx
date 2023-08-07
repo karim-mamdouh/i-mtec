@@ -22,7 +22,11 @@ const IndustrialSolutions = () => {
                 <Typography variant="h3" component="h3">
                   {card.title}
                 </Typography>
-                <Typography variant="p" component="p">
+                <Typography
+                  variant="p"
+                  component="p"
+                  sx={{ fontSize: { xs: "1rem", xxl: "1.5rem" } }}
+                >
                   {card.subtitle}
                 </Typography>
               </Stack>

@@ -10,9 +10,10 @@ export const heighlights = {
     backgroundColor: "var(--primary-color)",
     padding: "10px 20px ",
     fontSize: "1.2rem",
+    fontWeight: 700,
     textAlign: "center",
     minHeight: "100%",
-    borderBottom: "3px solid black",
+    borderBottom: "1px solid black",
     width: { lg: "11%", xs: "auto" },
   },
   headerCarousel: {

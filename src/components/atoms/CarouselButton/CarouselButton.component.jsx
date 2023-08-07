@@ -4,7 +4,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import { carouselButtonStyles } from "./CarouselButton.style";
 
-const CarouselButton = ({ onClick, className, style, next, prev }) => {
+export const CarouselButton = ({ onClick, className, style, next, prev }) => {
   return (
     <Button
       onClick={onClick}
@@ -16,5 +16,3 @@ const CarouselButton = ({ onClick, className, style, next, prev }) => {
     </Button>
   );
 };
-
-export default CarouselButton;

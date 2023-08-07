@@ -14,10 +14,12 @@ export const aboutStyles = {
   logoSection: {
     display: "flex",
     alignItems: "center",
-    padding: "1.25rem 0",
+    paddingTop: "1.875rem",
+    paddingBottom: "0.625rem",
   },
   figure: {
-    width: { xs: "70%", sm: "20%" },
+    width: { xs: "60%", sm: "20%" },
+    fontSize: "0",
   },
   logoContainer: {
     display: "flex",
@@ -31,6 +33,8 @@ export const aboutStyles = {
   //   Info Section
   info: {
     backgroundColor: "var(--ternary-color)",
+    width: { xs: "90%", sm: "80%" },
+    margin: "0 auto",
   },
   infoList: { listStyle: "none", padding: "20px" },
   infoPoint: {
@@ -56,14 +60,16 @@ export const aboutStyles = {
     padding: "10px 40px",
     border: "1px solid var(--primary-color)",
     width: "fit-content",
-    color: "var(--primary-color)",
-    fontSize: "2.125rem",
+    // color: "var(--primary-color)",
+    fontSize: { xs: "1rem", sm: "1.5625rem" },
+    borderTop: "none",
     textAlign: "center",
   },
   formSection: {
     alignItems: "center",
     justifyContent: "space-between",
     flexDirection: { xs: "column", md: "row" },
+    margin: "3.5rem auto",
   },
   partnerFigure: {
     width: { xs: "100%", md: "40%" },

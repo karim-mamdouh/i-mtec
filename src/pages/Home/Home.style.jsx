@@ -21,9 +21,10 @@ export const homeStyles = {
     alignItems: "center",
     backgroundColor: "var(--primary-color)",
     color: "white",
-    width: { xs: "100%", sm: "40%" },
-    backgroundImage: { xs: "unset", sm: `url(${background})` },
+    width: { xs: "100%", sm: "40%", lg: "30%" },
+    // backgroundImage: { xs: "unset", sm: `url(${background})` },
     backgroundRepeat: "no-repeat",
+    order: { xs: 2, sm: 1 },
     backgroundPosition: "0% 100%",
   },
   heroLeftTitle: {
@@ -33,7 +34,8 @@ export const homeStyles = {
     whiteSpace: "pre-wrap",
   },
   heroRight: {
-    width: { xs: "100%", sm: "60%" },
+    width: { xs: "100%", sm: "60%", lg: "70%" },
+    order: { xs: 1, sm: 2 },
   },
   solutionsTitleContainer: {
     marginTop: "3.75rem",
@@ -44,10 +46,11 @@ export const homeStyles = {
   solutionsTitle: {
     padding: "10px 40px",
     border: "1px solid var(--primary-color)",
+    borderTop: "none",
     width: "fit-content",
-    color: "var(--primary-color)",
+    // color: "var(--primary-color)",
     textAlign: "center",
-    fontSize: { xs: "2rem", sm: "2.125rem" },
+    fontSize: { xs: "1rem", sm: "1.5625rem" },
   },
   solutionCardsContainer: {
     flexDirection: "row",

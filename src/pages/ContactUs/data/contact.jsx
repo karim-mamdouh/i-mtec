@@ -15,12 +15,12 @@ export const contactFormFields = [
     id: "email",
     name: "email",
     label: "Email *",
-    style: "full",
+    style: "half",
   },
   {
     id: "message",
     name: "message",
-    label: "Type your message here...",
-    style: "full",
+    label: "Message *",
+    style: "half",
   },
 ];

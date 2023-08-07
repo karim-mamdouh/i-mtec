@@ -33,7 +33,7 @@ export const Policy = () => {
         <Typography
           component="p"
           variant="p"
-          sx={{ fontWeight: 700, fontSize: "1.5rem", margin: "0.75rem auto" }}
+          sx={{ fontWeight: 700, fontSize: "2.5rem" }}
         >
           {policy?.subtitle}
         </Typography>

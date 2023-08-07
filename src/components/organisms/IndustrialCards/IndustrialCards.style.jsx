@@ -4,14 +4,14 @@ export const industrialCardStyle = {
     padding: "5px",
     alignItems: "center",
     height: "100%",
-    maxWidth: "500px",
+    // maxWidth: "500px",
     width: "100%",
-    gap: "10px",
+    gap: "1.875rem",
     justifyContent: "space-between",
   },
   image: {
     maxWidth: "100%",
-    height: "15.5rem",
+    height: { xs: "15.5rem", xxl: "23rem" },
     width: "100%",
   },
   figure: { width: "100%" },
@@ -26,7 +26,7 @@ export const industrialCardStyle = {
   button: {
     width: "fit-content",
     borderRadius: "0",
-    margin: "5px auto 5px 10px",
+    margin: "5px 10px 5px auto",
   },
   readMore: {
     fontSize: "0.75rem",

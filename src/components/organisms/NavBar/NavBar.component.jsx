@@ -10,8 +10,9 @@ import { sharedImages } from "../../../common/images/sharedImages";
 
 const navLinks = [
   createNavLink("Home", "/"),
-  createNavLink("About", "/about"),
   createNavLink("Industrial Solutions", "/industrial-solutions"),
+  createNavLink("Career", "/career"),
+  createNavLink("About", "/about"),
   createNavLink("Contact Us", "/contact-us"),
 ];
 

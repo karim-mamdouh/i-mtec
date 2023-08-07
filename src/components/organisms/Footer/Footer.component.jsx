@@ -1,9 +1,9 @@
 import { Box, Divider, Stack, Typography } from "@mui/material";
 import React from "react";
-import SearchForm from "../../molecules/Search/SearchForm";
 import logo from "../../../assets/images/logo.webp";
 import { NavLink } from "react-router-dom";
 import { footerStyle } from "./Footer.style";
+import SearchForm from "../../molecules/Search/SearchForm.component";
 
 const Footer = () => {
   const footerLinks = [

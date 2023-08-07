@@ -14,13 +14,13 @@ export const sideNavStyles = {
   },
   drawerList: {
     listStyle: "none",
-    gap: "3rem",
+    gap: "2rem",
     padding: "0 2.5rem",
     // flexGrow: 1,
-    justifyContent: "center",
+    justifyContent: "space-evenly",
   },
   drawerListItem: {
-    fontSize: "2rem",
+    fontSize: "1.5rem",
     fontWeight: "bold",
     color: "white",
   },

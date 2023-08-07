@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material";
 export const theme = createTheme({
   typography: {
     fontFamily: ["Lato", "sans-serif"].join(","),
-
+    fontWeightLight: 300,
     h1: {
       fontWeight: 700,
       fontSize: "1.25rem",
@@ -19,12 +19,12 @@ export const theme = createTheme({
     },
     p: {
       fontFamily: ["Lato", "sans-serif"].join(","),
-      fontWeight: 400,
+      fontWeight: 300,
       textAlign: "justify",
       // lineHeight: "2rem",
     },
     button: {
-      fontFamily: ["EB Garamond", "sans-serif"].join(","),
+      // fontFamily: ["EB Garamond", "sans-serif"].join(","),
       textTransform: "none",
       boxShadow: 0,
       margin: 0,
@@ -33,7 +33,7 @@ export const theme = createTheme({
 
   palette: {
     primary: {
-      main: "#d00b22",
+      main: "#ee1b24",
     },
     secondary: {
       main: "#000",
@@ -50,7 +50,8 @@ export const theme = createTheme({
       sm: 768,
       md: 900,
       lg: 1200,
-      xl: 1536,
+      xl: 1300,
+      xxl: 1800,
     },
   },
 
@@ -79,19 +80,38 @@ export const theme = createTheme({
         // disableTouchRipple: true,
       },
     },
-
+    MuiTextField: {
+      variants: [
+        {
+          props: { variant: "fill" },
+          style: {
+            "& .MuiOutlinedInput-root": {
+              "&.Mui-focused fieldset": {
+                borderWidth: 0, // Remove border on focus
+              },
+              "&:hover fieldset": {
+                borderWidth: 0, // Remove border on hover
+              },
+              "& fieldset": {
+                borderWidth: 0, // Remove default border
+              },
+            },
+          },
+        },
+      ],
+    },
     MuiButton: {
       variants: [
         {
           props: { variant: "fill" },
           style: {
             "&:hover": {
-              backgroundColor: "#E07682",
+              backgroundColor: "#ee1b24",
             },
             color: "white",
-            fontWeight: 400,
+            fontWeight: 700,
             borderRadius: "0",
-            backgroundColor: "#d00b22",
+            backgroundColor: "#ee1b24",
             fontSize: "1rem",
           },
         },

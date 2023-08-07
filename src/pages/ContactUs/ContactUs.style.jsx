@@ -17,6 +17,7 @@ export const contactStyles = {
   // Address
   address: {
     display: "flex",
+    order: { xs: 1, sm: 2 },
     alignItems: "end",
   },
   addressList: {
@@ -24,7 +25,8 @@ export const contactStyles = {
     listStyle: "none",
     padding: "20px",
     width: "100%",
-    alignItems: "center",
+    gap: "1rem",
+    // alignItems: "center",
   },
   addressText: {
     fontSize: { xs: "1rem", md: "1.5rem" },
@@ -50,5 +52,7 @@ export const contactStyles = {
   formSection: {
     display: "flex",
     alignItems: "center",
+    width: { xs: "100%", sm: "50%" },
+    order: { xs: 2, sm: 1 },
   },
 };

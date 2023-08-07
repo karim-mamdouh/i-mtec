@@ -11,7 +11,7 @@ import "./TextFieldInput.css";
 import { Grid } from "@mui/material";
 import { useMemo } from "react";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
-function TextFieldInput({
+export function TextFieldInput({
   type = "text",
   placeholder = "",
   StartAdornment = null,
@@ -148,4 +148,3 @@ TextFieldInput.propTypes = {
   EndAdornment: PropTypes.element,
   className: PropTypes.string,
 };
-export default TextFieldInput;

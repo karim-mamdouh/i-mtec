@@ -1,17 +1,20 @@
 export const policiesStyles = {
   container: {
-    padding: "2rem 0",
+    paddingTop: "1.85rem",
+    paddingBottom: "3.5rem",
     alignItems: "center",
+    gap: "1.85rem",
   },
   text: {
     width: { xs: "100%", sm: "80%" },
-    margin: "1rem auto",
-    fontSize: "1.75rem",
+    // margin: "1rem auto",
+    fontSize: { xs: "1.25rem", sm: "2.18rem" },
   },
   image: {
     maxWidth: "100%",
   },
   figure: {
     width: { xs: "50%", sm: "12%" },
+    fontSize: 0,
   },
 };

@@ -10,21 +10,20 @@ const HeroCard = ({ image, title }) => {
       component="div"
       sx={{
         ...heroCardStyles.card,
-        backgroundImage: `url(${image})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        border: "1px solid white",
+        // backgroundImage: `url(${image})`,
+        // backgroundSize: "cover",
+        // backgroundPosition: "center",
       }}
     >
       <Box component="section" sx={heroCardStyles.overlay}></Box>
-      {/* <Box component="figure" sx={heroCardStyles.cardImgContainer}>
+      <Box component="figure" sx={heroCardStyles.cardImgContainer}>
         <Box
           component="img"
           src={image}
           alt="news-image"
           sx={heroCardStyles.cardImg}
         ></Box>
-      </Box> */}
+      </Box>
       <Stack component="div" sx={heroCardStyles.cardContent}>
         <Typography component="h3" variant="h3" sx={heroCardStyles.title}>
           {title}

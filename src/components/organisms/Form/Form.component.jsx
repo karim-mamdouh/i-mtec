@@ -2,7 +2,7 @@ import { Button, Stack, TextField } from "@mui/material";
 import { formStyles } from "./Form.style";
 import React from "react";
 
-const Form = ({ formControllers }) => {
+const Form = ({ formControllers, maxWidth, btnTitle }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
@@ -11,25 +11,25 @@ const Form = ({ formControllers }) => {
   };
 
   return (
-    <Stack
-      component="form"
-      sx={formStyles.formContainer}
-      onSubmit={handleSubmit}
-    >
-      {formControllers.map((item, index) => (
-        <TextField
-          key={index}
-          id={item.id}
-          name={item.name}
-          label={item.label}
-          variant="standard"
-          sx={
-            item.style === "half"
-              ? { ...formStyles.input, ...formStyles.gridInput }
-              : formStyles.input
-          }
-        />
-      ))}
+    <Stack component="form" onSubmit={handleSubmit}>
+      <Stack
+        sx={{ ...formStyles.formContainer, maxWidth: maxWidth || "500px" }}
+      >
+        {formControllers.map((item, index) => (
+          <TextField
+            key={index}
+            id={item.id}
+            name={item.name}
+            label={item.label}
+            variant="standard"
+            sx={
+              item.style === "half"
+                ? { ...formStyles.input, ...formStyles.gridInput }
+                : formStyles.input
+            }
+          />
+        ))}
+      </Stack>
 
       {/* <TextField
         id="lastName"
@@ -69,12 +69,10 @@ const Form = ({ formControllers }) => {
         fullWidth
         sx={formStyles.input}
       /> */}
-
-      <Stack sx={formStyles.formSubmitContainer}>
-        <Button type="submit" variant="contained" sx={formStyles.formSubmitBtn}>
-          Submit
-        </Button>
-      </Stack>
+      <Button type="submit" variant="contained" sx={formStyles.formSubmitBtn}>
+        {btnTitle || "Submit"}
+      </Button>
+      {/* <Stack sx={formStyles.formSubmitContainer}></Stack> */}
     </Stack>
   );
 };

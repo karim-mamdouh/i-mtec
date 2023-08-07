@@ -19,27 +19,27 @@ export const formFields = [
     style: "half",
   },
   {
+    id: "email",
+    name: "email",
+    label: "Email *",
+    style: "half",
+  },
+  {
     id: "phone",
     name: "phone",
     label: "Phone *",
     style: "half",
   },
   {
-    id: "answer",
-    name: "answer",
-    label: "Add Answer here",
+    id: "company",
+    name: "company",
+    label: "Company",
     style: "half",
-  },
-  {
-    id: "repeatAnswer",
-    name: "repeatAnswer",
-    label: "Add Answer here *",
-    style: "full",
   },
   {
     id: "message",
     name: "message",
-    label: "Type your message here...",
-    style: "full",
+    label: "Message *",
+    style: "half",
   },
 ];

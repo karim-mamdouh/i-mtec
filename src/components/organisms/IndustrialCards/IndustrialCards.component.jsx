@@ -19,20 +19,22 @@ const IndustrialCard = ({ image, title, subtitle, id }) => {
       <Typography component="h6" variant="h6" sx={industrialCardStyle.title}>
         {title}
       </Typography>
-      <Typography component="p" variant="p" sx={industrialCardStyle.subtitle}>
-        {subtitle}
-        <Typography component="span" sx={industrialCardStyle.readMore}>
-          ...Read More
+      <Stack>
+        <Typography component="p" variant="p" sx={industrialCardStyle.subtitle}>
+          {subtitle}
+          <Typography component="span" sx={industrialCardStyle.readMore}>
+            ...
+          </Typography>
         </Typography>
-      </Typography>
-      <Button variant="fill" sx={industrialCardStyle.button}>
-        <HashLink
-          to={cardId}
-          style={{ textDecoration: "none", color: "white" }}
-        >
-          Read More
-        </HashLink>
-      </Button>
+        <Button variant="fill" sx={industrialCardStyle.button}>
+          <HashLink
+            to={cardId}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Read More
+          </HashLink>
+        </Button>
+      </Stack>
     </Stack>
   );
 };

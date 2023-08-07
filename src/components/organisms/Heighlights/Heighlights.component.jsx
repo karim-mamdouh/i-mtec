@@ -2,7 +2,7 @@ import { Stack, Typography } from "@mui/material";
 import React from "react";
 import { heighlights } from "./Heiglights.style";
 import Carousel from "react-material-ui-carousel";
-import CarouselButton from "../../atoms/CarouselButton/CarouselButton.component";
+import { CarouselButton } from "../../atoms";
 
 const heiglightData = [
   "Are you running out of floor space for projects you need to build?",
