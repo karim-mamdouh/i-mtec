@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/i-mtec/static/css/main.f4461a76.css",
-    "main.js": "/i-mtec/static/js/main.13cba140.js",
+    "main.css": "/i-mtec/static/css/main.e4ea5fc3.css",
+    "main.js": "/i-mtec/static/js/main.a9aa8ab5.js",
     "static/js/787.d9901b45.chunk.js": "/i-mtec/static/js/787.d9901b45.chunk.js",
     "static/media/shutterstock_2307295835.jpg": "/i-mtec/static/media/shutterstock_2307295835.9b6f4e1d644a1d5a2bfa.jpg",
     "static/media/shutterstock_2114855201.jpg": "/i-mtec/static/media/shutterstock_2114855201.97f3e54025a4f2e3e085.jpg",
@@ -11,18 +11,18 @@
     "static/media/shutterstock_2219825287.jpg": "/i-mtec/static/media/shutterstock_2219825287.0cd0fdc88d5a9b3be384.jpg",
     "static/media/vision-nbg.png": "/i-mtec/static/media/vision-nbg.c5a7f26346fbd27b58fd.png",
     "static/media/Mission-Red.png": "/i-mtec/static/media/Mission-Red.2b850b8a47cb5e61325f.png",
-    "static/media/—Pngtree—about our company interface_7390103.png": "/i-mtec/static/media/—Pngtree—about our company interface_7390103.93092959ad5de282989b.png",
+    "static/media/—Pngtree—about our company interface_7390103.png": "/i-mtec/static/media/—Pngtree—about our company interface_7390103.d871c28626a615f57bf9.png",
     "static/media/Values-Nobg.png": "/i-mtec/static/media/Values-Nobg.6e7fae32a61959f561f8.png",
     "static/media/MicrosoftTeams-image (14).png": "/i-mtec/static/media/MicrosoftTeams-image (14).a4ecb123ace52b778547.png",
     "static/media/logo.webp": "/i-mtec/static/media/logo.0b08aee4af11dd59c86e.webp",
     "static/media/background.webp": "/i-mtec/static/media/background.c08792e6e517868f9690.webp",
     "index.html": "/i-mtec/index.html",
-    "main.f4461a76.css.map": "/i-mtec/static/css/main.f4461a76.css.map",
-    "main.13cba140.js.map": "/i-mtec/static/js/main.13cba140.js.map",
+    "main.e4ea5fc3.css.map": "/i-mtec/static/css/main.e4ea5fc3.css.map",
+    "main.a9aa8ab5.js.map": "/i-mtec/static/js/main.a9aa8ab5.js.map",
     "787.d9901b45.chunk.js.map": "/i-mtec/static/js/787.d9901b45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4461a76.css",
-    "static/js/main.13cba140.js"
+    "static/css/main.e4ea5fc3.css",
+    "static/js/main.a9aa8ab5.js"
   ]
 }
