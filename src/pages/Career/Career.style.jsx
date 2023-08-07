@@ -1,6 +1,7 @@
 export const careerStyle = {
   container: {
-    padding: "1.875rem 0",
+    paddingBottom: "1.875rem",
+    paddingTop: "3.75rem",
     width: { xs: "100%", sm: "80%" },
     margin: "0 auto",
     gap: "1.5rem",

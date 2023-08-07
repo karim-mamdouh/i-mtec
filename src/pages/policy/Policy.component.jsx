@@ -16,7 +16,7 @@ export const Policy = () => {
     } else if (url.includes("quality")) {
       setPolicy({ ...policies.quality, subtitle: "Quality Policy" });
     }
-  }, []);
+  }, [window.location.href]);
 
   return (
     <>
@@ -38,8 +38,13 @@ export const Policy = () => {
           {policy?.subtitle}
         </Typography>
 
-        {policy?.text?.map((text) => (
-          <Typography component="p" variant="p" sx={policiesStyles.text}>
+        {policy?.text?.map((text, index) => (
+          <Typography
+            component="p"
+            variant="p"
+            sx={policiesStyles.text}
+            key={index}
+          >
             {text}
           </Typography>
         ))}

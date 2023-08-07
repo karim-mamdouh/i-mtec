@@ -21,8 +21,9 @@ export const searchFormStyles = {
     "& .MuiInputBase-input": {
       paddingY: "0",
       color: "#fff",
-      outline: "none",
+      outline: "0",
       border: "none",
+      // borderColor: "transparent",
     },
   },
   submitBtn: {

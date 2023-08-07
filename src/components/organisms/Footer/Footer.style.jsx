@@ -19,16 +19,37 @@ export const footerStyle = {
     width: { xs: "100%", md: "25%" },
     flexDirection: "column",
   },
-  linksBox: { margin: "20px", fontSize: "3rem" },
+  linksBox: {
+    // margin: "20px",
+    // fontSize: "3rem",
+    flexWrap: "wrap",
+    flexDirection: "row",
+  },
   link: {
     color: "#fff",
     display: "block",
     marginBottom: "15px",
     // padding: "0 20px",
-    width: "fit-content",
+    width: "50%",
   },
   desc: {
     fontSize: "16px",
     width: { xs: "100%", sm: "360px" },
+  },
+  block: {
+    width: { xs: "100%", lg: "33%" },
+  },
+  socialLink: {
+    color: "white",
+    backgroundColor: "black",
+    padding: "3px",
+    border: "1px solid transparent",
+    borderRadius: "50% 50%",
+    display: "flex",
+    justifyContent: "center",
+  },
+  socialMediaContainer: {
+    flexDirection: "row",
+    justifyContent: "space-evenly",
   },
 };

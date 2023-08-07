@@ -80,26 +80,26 @@ export const theme = createTheme({
         // disableTouchRipple: true,
       },
     },
-    MuiTextField: {
-      variants: [
-        {
-          props: { variant: "fill" },
-          style: {
-            "& .MuiOutlinedInput-root": {
-              "&.Mui-focused fieldset": {
-                borderWidth: 0, // Remove border on focus
-              },
-              "&:hover fieldset": {
-                borderWidth: 0, // Remove border on hover
-              },
-              "& fieldset": {
-                borderWidth: 0, // Remove default border
-              },
-            },
-          },
-        },
-      ],
-    },
+    // MuiTextField: {
+    //   variants: [
+    //     {
+    //       props: { variant: "fill" },
+    //       style: {
+    //         "& .MuiOutlinedInput-root": {
+    //           "&.Mui-focused fieldset": {
+    //             borderWidth: 0, // Remove border on focus
+    //           },
+    //           "&:hover fieldset": {
+    //             borderWidth: 0, // Remove border on hover
+    //           },
+    //           "& fieldset": {
+    //             borderWidth: 0, // Remove default border
+    //           },
+    //         },
+    //       },
+    //     },
+    //   ],
+    // },
     MuiButton: {
       variants: [
         {
@@ -128,6 +128,21 @@ export const theme = createTheme({
             borderRadius: 0,
             backgroundColor: "transparent",
             fontWeight: 500,
+          },
+        },
+        {
+          props: { variant: "footer" },
+          style: {
+            "&:hover": {
+              background: "white",
+              color: "black",
+            },
+            color: "white",
+            border: "1px solid white",
+            borderRadius: 0,
+            backgroundColor: "transparent",
+            fontWeight: 500,
+            borderRadius: "10px",
           },
         },
         // {
