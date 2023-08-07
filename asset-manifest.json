@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/i-mtec/static/css/main.e4ea5fc3.css",
-    "main.js": "/i-mtec/static/js/main.a9aa8ab5.js",
+    "main.js": "/i-mtec/static/js/main.73055570.js",
     "static/js/787.d9901b45.chunk.js": "/i-mtec/static/js/787.d9901b45.chunk.js",
     "static/media/shutterstock_2307295835.jpg": "/i-mtec/static/media/shutterstock_2307295835.9b6f4e1d644a1d5a2bfa.jpg",
     "static/media/shutterstock_2114855201.jpg": "/i-mtec/static/media/shutterstock_2114855201.97f3e54025a4f2e3e085.jpg",
@@ -18,11 +18,11 @@
     "static/media/background.webp": "/i-mtec/static/media/background.c08792e6e517868f9690.webp",
     "index.html": "/i-mtec/index.html",
     "main.e4ea5fc3.css.map": "/i-mtec/static/css/main.e4ea5fc3.css.map",
-    "main.a9aa8ab5.js.map": "/i-mtec/static/js/main.a9aa8ab5.js.map",
+    "main.73055570.js.map": "/i-mtec/static/js/main.73055570.js.map",
     "787.d9901b45.chunk.js.map": "/i-mtec/static/js/787.d9901b45.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e4ea5fc3.css",
-    "static/js/main.a9aa8ab5.js"
+    "static/js/main.73055570.js"
   ]
 }
