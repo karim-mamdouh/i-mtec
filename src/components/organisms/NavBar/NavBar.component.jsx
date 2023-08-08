@@ -13,7 +13,7 @@ const navLinks = [
   createNavLink("Industrial Solutions", "/industrial-solutions"),
   createNavLink("Career", "/career"),
   createNavLink("About", "/about"),
-  createNavLink("Contact Us", "/contact-us"),
+  createNavLink("Contact", "/contact-us"),
 ];
 
 const NavBar = () => {
@@ -56,7 +56,11 @@ const NavBar = () => {
         {windowWidth >= 768 ? (
           <Stack component="ul" sx={navBarStyles.linksList}>
             {navLinks.map((link, index) => (
-              <Stack component="li" key={index}>
+              <Stack
+                component="li"
+                key={index}
+                sx={{ fontFamily: "Lato", fontWeight: 300 }}
+              >
                 <NavLink to={link.path} style={getActiveLinkColor}>
                   {link.title}
                 </NavLink>

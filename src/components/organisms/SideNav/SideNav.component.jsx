@@ -26,7 +26,7 @@ const navLinks = [
   createNavLink("Mission", "/mission"),
   createNavLink("Vision", "/vision"),
   createNavLink("Quality Policy", "/quality"),
-  createNavLink("Contact Us", "/contact-us"),
+  createNavLink("Contact", "/contact-us"),
 ];
 
 const SideNav = () => {

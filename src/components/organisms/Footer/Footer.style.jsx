@@ -24,13 +24,14 @@ export const footerStyle = {
     // fontSize: "3rem",
     flexWrap: "wrap",
     flexDirection: "row",
+    justifyContent: { xs: "space-between", sm: "flex-end" },
   },
   link: {
     color: "#fff",
     display: "block",
     marginBottom: "15px",
     // padding: "0 20px",
-    width: "50%",
+    width: "35%",
   },
   desc: {
     fontSize: "16px",

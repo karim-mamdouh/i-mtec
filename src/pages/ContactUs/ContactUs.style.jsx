@@ -25,7 +25,7 @@ export const contactStyles = {
     listStyle: "none",
     padding: "20px",
     width: "100%",
-    gap: "1rem",
+    gap: "0.5rem",
     // alignItems: "center",
   },
   addressText: {

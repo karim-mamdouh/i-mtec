@@ -42,6 +42,8 @@ export const aboutStyles = {
     marginBottom: "30px",
     lineHeight: "1.5",
     textAlign: "justify",
+    fontFamily: "Lato",
+    fontWeight: 300,
   },
   headerCarousel: {
     backgroundColor: "var(--secondary-color)",

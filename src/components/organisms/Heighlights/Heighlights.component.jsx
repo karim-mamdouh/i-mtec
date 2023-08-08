@@ -34,7 +34,12 @@ const Heighlights = () => {
           animation="slide"
         >
           {heiglightData.map((item, index) => (
-            <Typography component="p" key={index} sx={heighlights.carouselItem}>
+            <Typography
+              component="p"
+              variant="p"
+              key={index}
+              sx={heighlights.carouselItem}
+            >
               {item}
             </Typography>
           ))}

@@ -30,7 +30,7 @@ export const homeStyles = {
   heroLeftTitle: {
     fontSize: { xs: "1.5rem", sm: "3.45rem" },
     lineHeight: "3.5rem",
-    marginBottom: "1.5rem",
+    marginBottom: "3rem",
     whiteSpace: "pre-wrap",
   },
   heroRight: {

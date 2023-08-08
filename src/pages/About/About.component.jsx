@@ -25,7 +25,12 @@ export const About = () => {
       <Stack component="section" sx={aboutStyles.info}>
         <Box component="ul" sx={aboutStyles.infoList}>
           {Informations.map((point, index) => (
-            <Box component="li" key={index} sx={aboutStyles.infoPoint}>
+            <Box
+              component="li"
+              variant="li"
+              key={index}
+              sx={aboutStyles.infoPoint}
+            >
               {point}
             </Box>
           ))}

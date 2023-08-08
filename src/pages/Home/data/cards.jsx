@@ -8,6 +8,12 @@ import {
   createIndustrialCard,
   createMissionCard,
 } from "../../../utilities/factories";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import { createMediaLink } from "../../../utilities/factories";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
 export const cards = [
   createHeroCard(heroImages.card1, "Sensing Technology"),
@@ -40,4 +46,27 @@ export const missionSectionCards = [
   createMissionCard(qualityImages.mission, "Mission", "/mission"),
   createMissionCard(qualityImages.vision, "Vision", "/vision"),
   createMissionCard(qualityImages.quality, "Quality Policy", "/quality"),
+];
+
+export const mediaLinks = [
+  createMediaLink(
+    "https://www.facebook.com/",
+    <FacebookIcon sx={{ fontSize: "2rem" }} />
+  ),
+  createMediaLink(
+    "https://www.instagram.com/",
+    <InstagramIcon sx={{ fontSize: "2rem" }} />
+  ),
+  createMediaLink(
+    "https://www.youtube.com/",
+    <YouTubeIcon sx={{ fontSize: "2rem" }} />
+  ),
+  createMediaLink(
+    "https://www.linkedin.com/",
+    <LinkedInIcon sx={{ fontSize: "2rem" }} />
+  ),
+  createMediaLink(
+    "https://www.twitter.com/",
+    <TwitterIcon sx={{ fontSize: "2rem" }} />
+  ),
 ];

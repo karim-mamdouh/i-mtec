@@ -2,10 +2,14 @@ import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import { homeStyles } from "./Home.style";
 import HeroCard from "../../components/organisms/HeroCard/HeroCard.component";
-import { cards, industrialCards, missionSectionCards } from "./data/cards";
+import {
+  cards,
+  industrialCards,
+  missionSectionCards,
+  mediaLinks,
+} from "./data/cards";
 import IndustrialCard from "../../components/organisms/IndustrialCards/IndustrialCards.component";
 import MissionCard from "../../components/organisms/missionCard/Mission.component";
-import { mediaLinks } from "../../components/organisms/SocialMedia/SocialMedia.component";
 import SearchForm from "../../components/molecules/Search/SearchForm.component";
 import { Banner } from "../../components/atoms";
 
@@ -117,14 +121,14 @@ export const Home = () => {
       </Stack>
       {/* Social Media section*/}
       <Stack sx={homeStyles.socialMediaSection}>
-        <Box component="div" sx={{ padding: "30px" }}>
+        <Box component="div" sx={{ padding: "1rem 1.875rem" }}>
           <Typography component="h3" sx={homeStyles.socialMediaTitle}>
             24 / 7 Updates Via Social Media
           </Typography>
-          <Typography component="h5" variant="h5">
+          <Typography component="h5" variant="h5" sx={{ fontSize: "1.25rem" }}>
             Join our tech community.{" "}
           </Typography>
-          <Typography component="h5" variant="h5">
+          <Typography component="h5" variant="h5" sx={{ fontSize: "1.25rem" }}>
             Follow us today.{" "}
           </Typography>
         </Box>

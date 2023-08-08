@@ -20,12 +20,12 @@ export const navBarStyles = {
   },
   linksList: {
     listStyle: "none",
-    width: "42.5%",
+    width: { xs: "45%", md: "37%" },
     flexDirection: "row",
     justifyContent: "space-evenly",
   },
   title: {
-    width: "42.5%",
+    width: { xs: "42%", md: "52%" },
     paddingLeft: "1.5rem",
     borderRight: "1px solid black",
     justifyContent: "center",
@@ -43,5 +43,6 @@ export const navBarStyles = {
     color: "var(--primary-color)",
     margin: "auto 0",
     textDecoration: "none",
+    fontWeight: 400,
   },
 };

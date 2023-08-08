@@ -6,7 +6,7 @@ export const industrialCardStyle = {
     height: "100%",
     // maxWidth: "500px",
     width: "100%",
-    gap: "1.875rem",
+    // gap: "1.25rem",
     justifyContent: "space-between",
   },
   image: {
@@ -19,6 +19,8 @@ export const industrialCardStyle = {
     fontWeight: "bold",
     fontSize: "1.5rem",
     textAlign: "center",
+    marginTop: "1.875rem",
+    marginBottom: "1.25rem",
   },
   subtitle: {
     padding: "0 10px",

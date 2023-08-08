@@ -67,7 +67,7 @@ const Footer = () => {
           sx={{
             width: "100%",
             margin: "auto",
-            paddingTop: "50px",
+            paddingTop: "30px",
             // marginBottom: "100px",
           }}
         >
@@ -93,17 +93,21 @@ const Footer = () => {
             alignItems="flex-end"
           >
             {/* Logo */}
-            <Stack sx={footerStyle.block}>
+            <Stack sx={{ ...footerStyle.block, marginBottom: "1rem" }}>
               <NavLink
                 to="/"
                 style={{
                   ...footerStyle.logo,
                 }}
               >
-                <Box
+                <Stack
                   component="figure"
                   backgroundColor="#fff"
-                  sx={{ width: { xs: "100%", md: "35%" } }}
+                  sx={{
+                    width: { xs: "100%", md: "35%" },
+                    justifyContent: "center",
+                    flexDirection: "row",
+                  }}
                 >
                   <Box
                     component="img"
@@ -111,9 +115,13 @@ const Footer = () => {
                     alt="i-mtec logo"
                     sx={{ maxWidth: "100%" }}
                   />
-                </Box>
+                </Stack>
                 <Box sx={{ width: { xs: "100%", md: "65%" } }}>
-                  <Typography style={{ ...footerStyle.title }}>iMT</Typography>
+                  <Typography
+                    style={{ ...footerStyle.title, marginBottom: "1rem" }}
+                  >
+                    iMT
+                  </Typography>
                   <Typography>Innovative Manufacturing Technologies</Typography>
                 </Box>
               </NavLink>
@@ -152,6 +160,7 @@ const Footer = () => {
                 gap: "1rem",
                 ...footerStyle.block,
                 flexDirection: { xs: "column", xxl: "row" },
+                marginBottom: "1rem",
               }}
             >
               <Box sx={{ flexGrow: 1 }}>
@@ -187,7 +196,7 @@ const Footer = () => {
                   <Button variant="footer">SUBSCRIBE</Button>
                 </Stack>
               </Box>
-              <Stack
+              {/* <Stack
                 sx={{
                   ...footerStyle.socialMediaContainer,
                   marginTop: { xs: "auto", xxl: "4rem" },
@@ -205,7 +214,7 @@ const Footer = () => {
                     {link.icon}
                   </Typography>
                 ))}
-              </Stack>
+              </Stack> */}
             </Stack>
             <Stack
               gap={"10px"}
@@ -234,13 +243,14 @@ const Footer = () => {
           component="p"
           variant="p"
           sx={{
-            width: "33%",
-            margin: "0 0 0 auto",
+            width: "fit-content",
+            margin: "0 1rem 0 auto",
             color: "white",
             padding: "0.5rem 0",
           }}
         >
-          &copy; {new Date().getFullYear()} by iMT
+          Copyright &copy; {new Date().getFullYear()} iMT. &nbsp; All rights
+          reserved.
         </Typography>
       </Box>
     </>

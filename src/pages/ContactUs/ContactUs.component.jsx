@@ -13,7 +13,7 @@ export const ContactUs = () => {
       <Stack
         sx={{
           flexDirection: { xs: "column", sm: "row" },
-          alignItems: "center",
+          // alignItems: "center",
           justifyContent: "space-between",
           width: { xs: "100%", sm: "80%" },
           margin: "0 auto",

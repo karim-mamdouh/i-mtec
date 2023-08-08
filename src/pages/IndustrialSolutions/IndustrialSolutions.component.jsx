@@ -19,13 +19,17 @@ const IndustrialSolutions = () => {
                     index === 1 ? "rgba(210, 27, 49, 0.9)" : "rgba(0,0,0, 0.9)",
                 }}
               >
-                <Typography variant="h3" component="h3">
+                <Typography
+                  variant="h3"
+                  component="h3"
+                  sx={{ fontSize: "2.5rem" }}
+                >
                   {card.title}
                 </Typography>
                 <Typography
                   variant="p"
                   component="p"
-                  sx={{ fontSize: { xs: "1rem", xxl: "1.5rem" } }}
+                  sx={{ fontSize: { xs: "1.125rem", xxl: "1.5rem" } }}
                 >
                   {card.subtitle}
                 </Typography>

@@ -8,7 +8,7 @@ export const policiesStyles = {
   text: {
     width: { xs: "100%", sm: "80%" },
     // margin: "1rem auto",
-    fontSize: { xs: "1.25rem", sm: "2.18rem" },
+    fontSize: { xs: "1.25rem", sm: "1.5rem" },
   },
   image: {
     maxWidth: "100%",
