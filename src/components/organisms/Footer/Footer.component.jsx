@@ -90,6 +90,7 @@ const Footer = () => {
             flexDirection={{ xs: "column", lg: "row" }}
             // marginTop="90px"
             justifyContent={"space-between"}
+            alignItems="flex-end"
           >
             {/* Logo */}
             <Stack sx={footerStyle.block}>
