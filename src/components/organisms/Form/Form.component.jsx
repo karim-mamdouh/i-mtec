@@ -1,4 +1,4 @@
-import { Button, Stack, TextField } from "@mui/material";
+import { Button, Stack, TextField, Typography } from "@mui/material";
 import { formStyles } from "./Form.style";
 import React from "react";
 
@@ -21,7 +21,9 @@ const Form = ({ formControllers, maxWidth, btnTitle }) => {
             id={item.id}
             name={item.name}
             label={item.label}
+            InputLabelProps={{ shrink: true }}
             variant="standard"
+            InputProps={{ disableUnderline: true }}
             sx={
               item.style === "half"
                 ? { ...formStyles.input, ...formStyles.gridInput }

@@ -16,13 +16,13 @@ export const searchFormStyles = {
   },
   inputField: {
     flex: 1,
-    outline: 0,
+    outline: "none !important",
     borderWidth: "0",
     "& .MuiInputBase-input": {
       paddingY: "0",
       color: "#fff",
-      outline: "0",
-      border: "none",
+      outline: "none !important",
+      border: "none !important",
       // borderColor: "transparent",
     },
   },

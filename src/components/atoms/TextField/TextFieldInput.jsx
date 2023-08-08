@@ -74,10 +74,15 @@ export function TextFieldInput({
         sx={{
           backgroundColor: bgColor,
           "&:focus-within fieldset, &:focus-visible fieldset": {
-            border: `none !important`,
+            // border: `none !important`,
+          },
+          "& .MuiInputBase-root": {
+            // border: "none !important",
           },
           "& .MuiOutlinedInput-root": {
+            // border: "none !important",
             "& > fieldset": {
+              border: "none !important",
               borderRadius: "0 !important",
             },
           },
