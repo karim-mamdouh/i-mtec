@@ -10,7 +10,11 @@ export const formStyles = {
   input: {
     marginTop: "10px",
     width: "100%",
-    borderBottomColor: "var(--primary-color)",
+    "& .MuiInputLabel-root": { color: "red" },
+    borderBottom: "1px solid red",
+    "& .MuiInputBase-input": {
+      color: "black", // Change the text color to red
+    },
     fontWeight: 300,
   },
   gridInput: {

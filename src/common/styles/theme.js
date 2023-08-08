@@ -139,7 +139,6 @@ export const theme = createTheme({
             },
             color: "white",
             border: "1px solid white",
-            borderRadius: 0,
             backgroundColor: "transparent",
             fontWeight: 500,
             borderRadius: "10px",

@@ -152,7 +152,6 @@ const Footer = () => {
                 gap: "1rem",
                 ...footerStyle.block,
                 flexDirection: { xs: "column", xxl: "row" },
-                gap: "1rem",
               }}
             >
               <Box sx={{ flexGrow: 1 }}>
@@ -162,11 +161,21 @@ const Footer = () => {
                 <Stack sx={{ flexDirection: "row", marginTop: "1rem" }}>
                   <TextField
                     variant="outlined"
-                    label="Enter Email Address"
+                    placeholder="Enter Email Address"
                     sx={{
                       backgroundColor: "white",
                       borderRadius: "10px",
                       flexGrow: 1,
+                      "&:focus-within fieldset, &:focus-visible fieldset": {
+                        border: "none !important",
+                        borderRadius: "10px",
+                      },
+                      "& .MuiOutlinedInput-root": {
+                        border: "none",
+                      },
+                      "& .MuiInputBase-root": {
+                        border: "none",
+                      },
                       "& .MuiInputBase-input": {
                         // paddingY: "0",
                         color: "#000",
