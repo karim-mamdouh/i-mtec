@@ -18,13 +18,14 @@ export const contactStyles = {
   address: {
     display: "flex",
     order: { xs: 1, sm: 2 },
-    alignItems: "end",
+    alignItems: { xs: "center", sm: "end" },
+    width: { xs: "100%", sm: "40%" },
   },
   addressList: {
     // width: { xs: "100%", sm: "50%" },
     listStyle: "none",
-    padding: "20px",
-    width: "100%",
+    padding: { xs: "0 0 20px 0", sm: "20px" },
+    width: "fit-content",
     gap: "0.5rem",
     // alignItems: "center",
   },

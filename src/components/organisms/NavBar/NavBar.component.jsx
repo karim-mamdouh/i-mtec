@@ -44,9 +44,13 @@ const NavBar = () => {
         </NavLink>
 
         {/* Title */}
-        {windowWidth >= 768 && (
+        {true && (
           <Stack sx={navBarStyles.title}>
-            <Typography variant="h1" component="h1">
+            <Typography
+              variant="h1"
+              component="h1"
+              sx={{ fontSize: { xs: "1rem", sm: "1.25rem" } }}
+            >
               iNNOVATiVE MANUFACTURiNG TECHNOLOGiES
             </Typography>
           </Stack>

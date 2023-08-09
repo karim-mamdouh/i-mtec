@@ -25,9 +25,9 @@ export const navBarStyles = {
     justifyContent: "space-evenly",
   },
   title: {
-    width: { xs: "42%", md: "52%" },
-    paddingLeft: "1.5rem",
-    borderRight: "1px solid black",
+    width: { xs: "52%", sm: "42%", md: "52%" },
+    paddingLeft: { xs: "0.25rem", sm: "1.5rem" },
+    borderRight: { xs: "none", sm: "1px solid black" },
     justifyContent: "center",
   },
   figure: {

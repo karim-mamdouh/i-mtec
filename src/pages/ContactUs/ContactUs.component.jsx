@@ -23,7 +23,7 @@ export const ContactUs = () => {
         {/* <Stack component="section"></Stack> */}
         {/* <Divider sx={contactStyles.divider}></Divider> */}
         <Stack component="section" sx={contactStyles.formSection}>
-          <Form formControllers={contactFormFields}></Form>
+          <Form formControllers={contactFormFields} maxWidth="auto"></Form>
         </Stack>
         <Stack component="section" sx={contactStyles.address}>
           <Stack component="ul" sx={contactStyles.addressList}>

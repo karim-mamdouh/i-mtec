@@ -33,10 +33,10 @@ export const aboutStyles = {
   //   Info Section
   info: {
     backgroundColor: "var(--ternary-color)",
-    width: { xs: "90%", sm: "80%" },
+    width: { xs: "100%", sm: "80%" },
     margin: "0 auto",
   },
-  infoList: { listStyle: "none", padding: "20px" },
+  infoList: { listStyle: "none", padding: { xs: "20px 0", sm: "20px" } },
   infoPoint: {
     fontSize: "1.5rem",
     marginBottom: "30px",

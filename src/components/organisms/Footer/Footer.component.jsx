@@ -116,14 +116,14 @@ const Footer = () => {
                     sx={{ maxWidth: "100%" }}
                   />
                 </Stack>
-                <Box sx={{ width: { xs: "100%", md: "65%" } }}>
-                  <Typography
-                    style={{ ...footerStyle.title, marginBottom: "1rem" }}
-                  >
-                    iMT
-                  </Typography>
+                <Stack sx={{ width: { xs: "100%", md: "65%" } }}>
+                  <Stack sx={{ flexGrow: 1, justifyContent: "center" }}>
+                    <Typography style={{ ...footerStyle.title }}>
+                      iMT
+                    </Typography>
+                  </Stack>
                   <Typography>Innovative Manufacturing Technologies</Typography>
-                </Box>
+                </Stack>
               </NavLink>
               {/* <Divider
               color="white"
