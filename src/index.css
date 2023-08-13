@@ -23,7 +23,8 @@ body,
 
 :root {
   /* --primary-color: #d00b22; */
-  --primary-color: #ee1b24;
+  /* --primary-color: #ee1b24; */
+  --primary-color: #cc0000;
   --secondary-color: #000;
   --ternary-color: #f5f5f5;
 }

@@ -1,5 +1,7 @@
 import { createTheme } from "@mui/material";
 
+const primaryColor = "#cc0000";
+
 export const theme = createTheme({
   typography: {
     fontFamily: ["Lato", "sans-serif"].join(","),
@@ -33,7 +35,7 @@ export const theme = createTheme({
 
   palette: {
     primary: {
-      main: "#ee1b24",
+      main: primaryColor,
     },
     secondary: {
       main: "#000",
@@ -106,12 +108,12 @@ export const theme = createTheme({
           props: { variant: "fill" },
           style: {
             "&:hover": {
-              backgroundColor: "#ee1b24",
+              backgroundColor: primaryColor,
             },
             color: "white",
             fontWeight: 700,
             borderRadius: "0",
-            backgroundColor: "#ee1b24",
+            backgroundColor: primaryColor,
             fontSize: "1rem",
           },
         },

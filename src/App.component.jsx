@@ -9,10 +9,13 @@ import { Stack } from "@mui/material";
 import { appStyles } from "./App.style";
 import SocialMedia from "./components/organisms/SocialMedia/SocialMedia.component";
 import { ScrollToTop } from "./components/atoms";
+import useWindowResize from "./utilities/hooks/useWindowResize";
 
 const customTheme = theme;
 
 const App = () => {
+  const width = useWindowResize();
+
   return (
     <ThemeProvider theme={customTheme}>
       <ScrollToTop />
@@ -21,7 +24,7 @@ const App = () => {
         <AppRoute />
       </Stack>
       <Footer />
-      <SocialMedia />
+      {width >= 768 && <SocialMedia />}
     </ThemeProvider>
   );
 };
