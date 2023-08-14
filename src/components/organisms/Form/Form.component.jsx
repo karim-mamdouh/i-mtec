@@ -1,4 +1,4 @@
-import { Button, Stack, TextField, Typography } from "@mui/material";
+import { Button, Stack, TextField } from "@mui/material";
 import { formStyles } from "./Form.style";
 import React from "react";
 
@@ -7,7 +7,6 @@ export const Form = ({ formControllers, maxWidth, btnTitle }) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const data = Object.fromEntries(formData.entries());
-    console.log(data);
   };
 
   return (
