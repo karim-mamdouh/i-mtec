@@ -2,7 +2,7 @@ import { Button, Stack, TextField, Typography } from "@mui/material";
 import { formStyles } from "./Form.style";
 import React from "react";
 
-const Form = ({ formControllers, maxWidth, btnTitle }) => {
+export const Form = ({ formControllers, maxWidth, btnTitle }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
@@ -78,4 +78,3 @@ const Form = ({ formControllers, maxWidth, btnTitle }) => {
     </Stack>
   );
 };
-export default Form;

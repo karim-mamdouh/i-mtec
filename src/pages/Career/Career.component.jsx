@@ -2,8 +2,8 @@ import React from "react";
 import { Banner } from "../../components/atoms";
 import { Stack, Typography } from "@mui/material";
 import { careerStyle } from "./Career.style";
-import Form from "../../components/organisms/Form/Form.component";
 import { formFields } from "./data/career";
+import { Form } from "../../components/organisms";
 
 export const Career = () => {
   return (

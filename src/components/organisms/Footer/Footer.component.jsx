@@ -12,7 +12,7 @@ import { NavLink } from "react-router-dom";
 import { footerStyle } from "./Footer.style";
 import { footerLinks } from "../../../common/routes/ListOfRoutes";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <>
       <Stack
@@ -216,5 +216,3 @@ const Footer = () => {
     </>
   );
 };
-
-export default Footer;

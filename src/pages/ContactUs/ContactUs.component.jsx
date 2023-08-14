@@ -1,10 +1,8 @@
-import { Box, Divider, Stack, TextField, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import { contactStyles } from "./ContactUs.style";
-import Form from "../../components/organisms/Form/Form.component";
 import { contactFormFields } from "./data/contact";
-import MailIcon from "@mui/icons-material/Mail";
-import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import { Banner } from "../../components/atoms";
+import { Form } from "../../components/organisms";
 
 export const ContactUs = () => {
   return (

@@ -19,7 +19,7 @@ export const mediaLinks = [
   createMediaLink("https://www.twitter.com/", <TwitterIcon />),
 ];
 
-const SideNav = () => {
+export const SideNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
@@ -65,5 +65,3 @@ const SideNav = () => {
     </Stack>
   );
 };
-
-export default SideNav;

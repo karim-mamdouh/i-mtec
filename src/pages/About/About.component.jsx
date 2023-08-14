@@ -1,14 +1,12 @@
 import { Box, Stack, Typography } from "@mui/material";
-import Form from "../../components/organisms/Form/Form.component";
 import { aboutStyles } from "./About.style";
 import { Informations, formFields } from "./data/about";
-import logo from "../../assets/images/logo.webp";
-// import useWindowResize from "../../utilities/hooks/useWindowResize";
 import React from "react";
 import { sharedImages } from "../../common/images/sharedImages";
 import { Banner } from "../../components/atoms";
+import { Form } from "../../components/organisms";
+
 export const About = () => {
-  // const windowWidth = useWindowResize();
   return (
     <>
       <Banner title="About iMT" />

@@ -2,13 +2,13 @@ import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import { navBarStyles } from "./NavBar.style";
 import { NavLink } from "react-router-dom";
-import useWindowResize from "../../../utilities/hooks/useWindowResize";
-import Heighlights from "../Heighlights/Heighlights.component";
-import SideNav from "../SideNav/SideNav.component";
+import { SideNav } from "..";
 import { sharedImages } from "../../../common/images/sharedImages";
 import { navLinks } from "../../../common/routes/ListOfRoutes";
+import { useWindowResize } from "../../../utilities/hooks";
+import { Heighlights } from "..";
 
-const NavBar = () => {
+export const NavBar = () => {
   const windowWidth = useWindowResize();
 
   const getActiveLinkColor = ({ isActive }) =>
@@ -71,5 +71,3 @@ const NavBar = () => {
     </Box>
   );
 };
-
-export default NavBar;

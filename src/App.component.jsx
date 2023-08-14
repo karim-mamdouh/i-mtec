@@ -1,15 +1,15 @@
-//Material UI
-import { ThemeProvider } from "@emotion/react";
-import { theme } from "./common/styles/theme";
-//Components
-import NavBar from "./components/organisms/NavBar/NavBar.component";
-import Footer from "./components/organisms/Footer/Footer.component";
+//MUI
 import { Stack } from "@mui/material";
-import { appStyles } from "./App.style";
-import SocialMedia from "./components/organisms/SocialMedia/SocialMedia.component";
-import { ScrollToTop } from "./components/atoms";
-import useWindowResize from "./utilities/hooks/useWindowResize";
+import { ThemeProvider } from "@emotion/react";
+//Components
+import { Footer, NavBar, SocialMedia } from "./components/organisms";
 import AppRoute from "./common/routes/AppRoutes";
+import { ScrollToTop } from "./components/atoms";
+//Hooks
+import { useWindowResize } from "./utilities/hooks";
+//Styles
+import { theme } from "./common/styles/theme";
+import { appStyles } from "./App.style";
 
 const customTheme = theme;
 
@@ -20,7 +20,7 @@ const App = () => {
     <ThemeProvider theme={customTheme}>
       <ScrollToTop />
       <NavBar />
-      <Stack component="main" sx={appStyles}>
+      <Stack component="main" sx={appStyles.main}>
         <AppRoute />
       </Stack>
       <Footer />

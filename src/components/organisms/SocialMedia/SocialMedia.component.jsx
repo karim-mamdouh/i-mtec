@@ -8,7 +8,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
-export const mediaLinks = [
+const mediaLinks = [
   createMediaLink(
     "https://www.facebook.com/",
     <FacebookIcon sx={{ fontSize: "1.25rem" }} />
@@ -31,7 +31,7 @@ export const mediaLinks = [
   ),
 ];
 
-const SocialMedia = () => {
+export const SocialMedia = () => {
   return (
     <Stack sx={socialMediaStyles.container}>
       {mediaLinks.map((link, index) => (
@@ -48,5 +48,3 @@ const SocialMedia = () => {
     </Stack>
   );
 };
-
-export default SocialMedia;

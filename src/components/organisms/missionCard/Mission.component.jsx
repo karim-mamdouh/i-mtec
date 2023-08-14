@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { missionSectionStyle } from "./Mission.style";
 
-const MissionCard = ({ image, title, link }) => {
+export const MissionCard = ({ image, title, link }) => {
   return (
     <Stack sx={missionSectionStyle.card}>
       <Box component="figure" sx={missionSectionStyle.figure}>
@@ -49,5 +49,3 @@ MissionCard.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
 };
-
-export default MissionCard;

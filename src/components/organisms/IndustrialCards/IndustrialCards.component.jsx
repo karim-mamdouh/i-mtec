@@ -4,7 +4,7 @@ import React from "react";
 import { industrialCardStyle } from "./IndustrialCards.style";
 import { HashLink } from "react-router-hash-link";
 
-const IndustrialCard = ({ image, title, subtitle, id }) => {
+export const IndustrialCard = ({ image, title, subtitle, id }) => {
   const cardId = `/industrial-solutions/#${id}`;
   return (
     <Stack sx={industrialCardStyle.card}>
@@ -44,5 +44,3 @@ IndustrialCard.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
 };
-
-export default IndustrialCard;

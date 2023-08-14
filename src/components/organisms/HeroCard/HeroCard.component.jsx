@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { heroCardStyles } from "./HeroCard.style";
 import { HashLink } from "react-router-hash-link";
 
-const HeroCard = ({ image, title }) => {
+export const HeroCard = ({ image, title }) => {
   return (
     <Box
       component="div"
@@ -49,5 +49,3 @@ HeroCard.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
 };
-
-export default HeroCard;

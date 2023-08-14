@@ -10,7 +10,7 @@ const heiglightData = [
   "Would you like to have your people focused on higher value add projects?",
 ];
 
-const Heighlights = () => {
+export const Heighlights = () => {
   return (
     <Stack sx={heighlights.header}>
       <Typography component="h2" sx={heighlights.headerTitle}>
@@ -48,5 +48,3 @@ const Heighlights = () => {
     </Stack>
   );
 };
-
-export default Heighlights;
