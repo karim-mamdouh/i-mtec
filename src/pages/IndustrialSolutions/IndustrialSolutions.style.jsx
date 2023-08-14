@@ -6,32 +6,13 @@ export const industrialSolutionsStyles = {
   },
   image: {
     maxWidth: "100%",
-    // maxHeight: "100%",
+    maxHeight: "100%",
     width: "100%",
   },
-  // container: {
-  //   flexDirection: { xs: "column", sm: "row" },
-  //   justifyContent: "center",
-  //   position: "relative",
-  //   width: "fit-content",
-  //   marginLeft: "auto",
-  //   marginRight: { xs: "auto", lg: "15%", xxl: "25%" },
-  // },
-  // textContainer: {
-  //   width: "100%",
-  //   padding: "1rem",
-  //   borderRadius: "10px",
-  //   color: "white",
-  //   position: "absolute",
-  //   left: { xs: "0", lg: "-60%" },
-  //   top: { xs: "62%", sm: "90%", lg: "70%" },
-  //   gap: "1rem",
-  //   justifyContent: "space-evenly",
-  //   maxWidth: { xs: "100%" },
-  // },
   pageContainer: {
     // gap: { xs: "15rem", xxl: "25re
-    marginBottom: "1rem",
+    margin: "2rem 0",
+    gap: "2rem",
     // borderBottom: "3px solid white",
   },
   cardContainer: {
@@ -40,6 +21,7 @@ export const industrialSolutionsStyles = {
     padding: { xs: "1rem", md: "4.375rem 1rem" },
     gap: { xs: "1rem", md: 0 },
     justifyContent: "space-between",
+    borderRadius: "0.8rem",
   },
   textContainer: {
     color: "white",
@@ -48,10 +30,11 @@ export const industrialSolutionsStyles = {
     gap: { xs: "1rem", md: "0" },
   },
   subtitle: {
-    fontSize: { xs: "1.2rem", xxl: "1.5rem" },
+    fontSize: { xs: "1.3rem", xxl: "2rem" },
   },
   title: {
-    fontSize: { xs: "2rem", md: "3rem" },
+    fontSize: { xs: "2rem", md: "2.25rem", xxl: "3rem" },
     textAlign: { xs: "center", md: "unset" },
+    paddingBottom: "0.25rem",
   },
 };

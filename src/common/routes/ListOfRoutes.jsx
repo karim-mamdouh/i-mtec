@@ -6,7 +6,6 @@ import {
   IndustrialSolutions,
   Policy,
 } from "../../pages";
-import IndustrialSolutions2 from "../../pages/Industrial2/IndustrialSolutions.component";
 import { createAppRoute, createNavLink } from "../../utilities/factories";
 
 export const appRoutes = [
@@ -18,12 +17,11 @@ export const appRoutes = [
   createAppRoute("/quality", <Policy />),
   createAppRoute("/industrial-solutions", <IndustrialSolutions />),
   createAppRoute("/career", <Career />),
-  createAppRoute("/industrial-solutions2", <IndustrialSolutions2 />),
 ];
 
 export const navLinks = [
   createNavLink("Home", "/"),
-  createNavLink("Industrial Solutions", "/industrial-solutions"),
+  createNavLink("Industrial Solution", "/industrial-solutions"),
   createNavLink("Career", "/career"),
   createNavLink("About", "/about"),
   createNavLink("Contact", "/contact-us"),
@@ -32,7 +30,7 @@ export const navLinks = [
 export const footerLinks = [
   createNavLink("Home", "/"),
   createNavLink("About", "/about"),
-  createNavLink("Industrial Solutions", "/industrial-solutions"),
+  createNavLink("Industrial Solution", "/industrial-solutions"),
   createNavLink("Mission", "/mission"),
   createNavLink("Contact", "/contact-us"),
   createNavLink("Vision", "/vision"),
@@ -42,7 +40,7 @@ export const footerLinks = [
 
 export const sideNavLinks = [
   createNavLink("Home", "/"),
-  createNavLink("Industrial Solutions", "/industrial-solutions"),
+  createNavLink("Industrial Solution", "/industrial-solutions"),
   createNavLink("Career", "/career"),
   createNavLink("About", "/about"),
   createNavLink("Mission", "/mission"),

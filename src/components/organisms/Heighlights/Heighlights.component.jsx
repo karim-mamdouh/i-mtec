@@ -1,7 +1,9 @@
+//MUI
 import { Stack, Typography } from "@mui/material";
-import React from "react";
-import { heighlights } from "./Heiglights.style";
 import Carousel from "react-material-ui-carousel";
+//Styles
+import { heighlights } from "./Heiglights.style";
+//Components
 import { CarouselButton } from "../../atoms";
 
 const heiglightData = [
@@ -10,41 +12,41 @@ const heiglightData = [
   "Would you like to have your people focused on higher value add projects?",
 ];
 
-export const Heighlights = () => {
-  return (
-    <Stack sx={heighlights.header}>
-      <Typography component="h2" sx={heighlights.headerTitle}>
-        Highlights:
-      </Typography>
-      <Stack sx={heighlights.headerCarousel}>
-        <Carousel
-          navButtonsAlwaysVisible={true}
-          sx={{ width: "100%", flexDirection: "row", display: "flex" }}
-          indicators={false}
-          swipe={true}
-          NavButton={({ onClick, className, style, next, prev }) => (
-            <CarouselButton
-              onClick={onClick}
-              className={className}
-              style={style}
-              next={next}
-              prev={prev}
-            />
-          )}
-          animation="slide"
-        >
-          {heiglightData.map((item, index) => (
-            <Typography
-              component="p"
-              variant="p"
-              key={index}
-              sx={heighlights.carouselItem}
-            >
-              {item}
-            </Typography>
-          ))}
-        </Carousel>
-      </Stack>
+export const Heighlights = () => (
+  <Stack sx={heighlights.header}>
+    {/* Title */}
+    <Typography component="h2" sx={heighlights.headerTitle}>
+      Highlights:
+    </Typography>
+    {/* Carousel */}
+    <Stack sx={heighlights.headerCarousel}>
+      <Carousel
+        navButtonsAlwaysVisible={true}
+        sx={{ width: "100%", flexDirection: "row", display: "flex" }}
+        indicators={false}
+        swipe={true}
+        NavButton={({ onClick, className, style, next, prev }) => (
+          <CarouselButton
+            onClick={onClick}
+            className={className}
+            style={style}
+            next={next}
+            prev={prev}
+          />
+        )}
+        animation="slide"
+      >
+        {heiglightData.map((item, index) => (
+          <Typography
+            component="p"
+            variant="p"
+            key={index}
+            sx={heighlights.carouselItem}
+          >
+            {item}
+          </Typography>
+        ))}
+      </Carousel>
     </Stack>
-  );
-};
+  </Stack>
+);

@@ -1,6 +1,6 @@
 export const bannerStyles = {
   bannerText: {
-    fontSize: { xs: "1rem", md: "2.5rem" },
+    fontSize: { xs: "1rem", md: "1.375rem" },
     padding: "20px",
     backgroundColor: "var(--primary-color)",
     color: "white",

@@ -1,12 +1,17 @@
+//MUI
 import { Box, Stack, Typography } from "@mui/material";
-import React from "react";
+//Styles
 import { navBarStyles } from "./NavBar.style";
+//React
 import { NavLink } from "react-router-dom";
+//Components
 import { SideNav } from "..";
+import { Heighlights } from "..";
+//Data
 import { sharedImages } from "../../../common/images/sharedImages";
 import { navLinks } from "../../../common/routes/ListOfRoutes";
+//Hooks
 import { useWindowResize } from "../../../utilities/hooks";
-import { Heighlights } from "..";
 
 export const NavBar = () => {
   const windowWidth = useWindowResize();
@@ -36,17 +41,15 @@ export const NavBar = () => {
         </NavLink>
 
         {/* Title */}
-        {true && (
-          <Stack sx={navBarStyles.title}>
-            <Typography
-              variant="h1"
-              component="h1"
-              sx={{ fontSize: { xs: "1rem", sm: "1.25rem" } }}
-            >
-              iNNOVATiVE MANUFACTURiNG TECHNOLOGiES
-            </Typography>
-          </Stack>
-        )}
+        <Stack sx={navBarStyles.title}>
+          <Typography
+            variant="h1"
+            component="h1"
+            sx={{ fontSize: { xs: "1rem", sm: "1.25rem" } }}
+          >
+            iNNOVATiVE MANUFACTURiNG TECHNOLOGiES
+          </Typography>
+        </Stack>
 
         {/* Nav links */}
         {windowWidth >= 768 ? (

@@ -63,6 +63,7 @@ export const Footer = () => (
                 ...footerStyle.logo,
               }}
             >
+              {/* Image */}
               <Stack
                 component="figure"
                 backgroundColor="#fff"
@@ -81,9 +82,11 @@ export const Footer = () => (
               </Stack>
               <Stack sx={{ width: { xs: "100%", md: "65%" } }}>
                 <Stack sx={{ flexGrow: 1, justifyContent: "center" }}>
-                  <Typography style={{ ...footerStyle.title }}>iMT</Typography>
+                  <Typography style={footerStyle.title}>iMT</Typography>
                 </Stack>
-                <Typography>Innovative Manufacturing Technologies</Typography>
+                <Typography sx={{ fontSize: "0.75rem" }}>
+                  Innovative Manufacturing Technologies
+                </Typography>
               </Stack>
             </NavLink>
             {/* <Divider

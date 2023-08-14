@@ -1,8 +1,9 @@
 import React from "react";
 import { Banner } from "../../components/atoms";
 import { Box, Stack, Typography } from "@mui/material";
-import { industrialSolutionsStyles } from "./IndustrialSolutions.style";
+// import { industrialSolutionsStyles } from "./IndustrialSolutions.style";
 import { solutions } from "./data/solutions";
+import { industrialSolutionsStyles } from "./IndustrialSolutions.style";
 
 export const IndustrialSolutions = () => {
   return (
@@ -38,6 +39,8 @@ export const IndustrialSolutions = () => {
                 sx={{
                   ...industrialSolutionsStyles.textContainer,
                   order: { xs: 2, md: index === 1 ? 2 : 1 },
+                  paddingLeft: index === 1 ? "0" : { xs: "0", md: "0.5rem" },
+                  paddingRight: index === 1 ? { xs: "0", md: "0.5rem" } : "0",
                 }}
               >
                 <Typography

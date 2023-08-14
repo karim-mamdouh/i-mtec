@@ -2,7 +2,7 @@ export const socialMediaStyles = {
   container: {
     position: "fixed",
     right: "0",
-    top: "40%",
+    top: "35%",
     paddingRight: "20px",
     gap: "5px",
     translateY: "translate(-50%)",

@@ -5,18 +5,10 @@ import { bannerStyles } from "./Banner.style";
 //React
 import PropTypes from "prop-types";
 
-export const Banner = ({ title, sx, fontSize }) => (
+export const Banner = ({ title, sx }) => (
   <Box sx={{ ...bannerStyles.bannerContainer, ...sx }}>
     {/* Title */}
-    <Typography
-      component="h2"
-      variant="h2"
-      sx={
-        fontSize
-          ? { ...bannerStyles.bannerText, fontSize }
-          : bannerStyles.bannerText
-      }
-    >
+    <Typography component="h2" variant="h2" sx={bannerStyles.bannerText}>
       {title}
     </Typography>
   </Box>

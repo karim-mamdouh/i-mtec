@@ -1,6 +1,9 @@
+//MUI
 import { Button, Stack, TextField } from "@mui/material";
+//React
+import PropTypes from "prop-types";
+//Styles
 import { formStyles } from "./Form.style";
-import React from "react";
 
 export const Form = ({ formControllers, maxWidth, btnTitle }) => {
   const handleSubmit = (event) => {
@@ -14,6 +17,7 @@ export const Form = ({ formControllers, maxWidth, btnTitle }) => {
       <Stack
         sx={{ ...formStyles.formContainer, maxWidth: maxWidth || "500px" }}
       >
+        {/* Form inputs */}
         {formControllers.map((item, index) => (
           <TextField
             key={index}
@@ -70,10 +74,18 @@ export const Form = ({ formControllers, maxWidth, btnTitle }) => {
         fullWidth
         sx={formStyles.input}
       /> */}
+
+      {/* Submit button */}
       <Button type="submit" variant="contained" sx={formStyles.formSubmitBtn}>
         {btnTitle || "Submit"}
       </Button>
       {/* <Stack sx={formStyles.formSubmitContainer}></Stack> */}
     </Stack>
   );
+};
+
+Form.propTypes = {
+  formControllers: PropTypes.array,
+  maxWidth: PropTypes.string,
+  btnTitle: PropTypes.string,
 };

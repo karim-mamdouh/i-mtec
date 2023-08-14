@@ -22,4 +22,9 @@ export const missionSectionStyle = {
     marginBottom: "10px",
     fontSize: { xs: "1rem", md: "1.5rem" },
   },
+  link: {
+    display: "flex",
+    gap: "10px",
+    alignItems: "center",
+  },
 };

@@ -1,21 +1,17 @@
+//MUI
 import { Box, Button, Stack, Typography } from "@mui/material";
-import React from "react";
-import PropTypes from "prop-types";
-import { heroCardStyles } from "./HeroCard.style";
+//React
 import { HashLink } from "react-router-hash-link";
+import PropTypes from "prop-types";
+//Styles
+import { heroCardStyles } from "./HeroCard.style";
 
 export const HeroCard = ({ image, title }) => {
   return (
-    <Box
-      component="div"
-      sx={{
-        ...heroCardStyles.card,
-        // backgroundImage: `url(${image})`,
-        // backgroundSize: "cover",
-        // backgroundPosition: "center",
-      }}
-    >
+    <Box component="div" sx={heroCardStyles.card}>
+      {/* Dimmed background */}
       <Box component="section" sx={heroCardStyles.overlay}></Box>
+      {/* Image */}
       <Box component="figure" sx={heroCardStyles.cardImgContainer}>
         <Box
           component="img"
@@ -24,6 +20,7 @@ export const HeroCard = ({ image, title }) => {
           sx={heroCardStyles.cardImg}
         ></Box>
       </Box>
+      {/* Title */}
       <Stack component="div" sx={heroCardStyles.cardContent}>
         <Typography component="h3" variant="h3" sx={heroCardStyles.title}>
           {title}
@@ -47,5 +44,4 @@ export const HeroCard = ({ image, title }) => {
 HeroCard.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
-  subtitle: PropTypes.string,
 };
