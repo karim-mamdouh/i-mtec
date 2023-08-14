@@ -71,7 +71,6 @@ export const theme = createTheme({
             fontSize: "1rem",
           },
         },
-
         {
           props: { variant: "outline" },
           style: {
@@ -90,8 +89,8 @@ export const theme = createTheme({
           props: { variant: "footer" },
           style: {
             "&:hover": {
-              background: "white",
-              color: "black",
+              background: primaryColor,
+              color: "white",
             },
             color: "white",
             border: "1px solid white",
