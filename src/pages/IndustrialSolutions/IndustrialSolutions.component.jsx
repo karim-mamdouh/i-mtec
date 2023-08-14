@@ -4,7 +4,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import { industrialSolutionsStyles } from "./IndustrialSolutions.style";
 import { solutions } from "./data/solutions";
 
-const IndustrialSolutions = () => {
+export const IndustrialSolutions = () => {
   return (
     <>
       <Banner title=" Innovative Manufacturing. Exceptional Results!" />
@@ -62,5 +62,3 @@ const IndustrialSolutions = () => {
     </>
   );
 };
-
-export default IndustrialSolutions;

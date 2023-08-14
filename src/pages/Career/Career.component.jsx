@@ -5,7 +5,7 @@ import { careerStyle } from "./Career.style";
 import Form from "../../components/organisms/Form/Form.component";
 import { formFields } from "./data/career";
 
-const Career = () => {
+export const Career = () => {
   return (
     <>
       <Banner title="We Need Your Expertise" />
@@ -37,5 +37,3 @@ const Career = () => {
     </>
   );
 };
-
-export default Career;

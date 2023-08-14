@@ -10,49 +10,9 @@ import React from "react";
 import logo from "../../../assets/images/logo.webp";
 import { NavLink } from "react-router-dom";
 import { footerStyle } from "./Footer.style";
-import SearchForm from "../../molecules/Search/SearchForm.component";
-import { mediaLinks } from "../SideNav/SideNav.component";
+import { footerLinks } from "../../../common/routes/ListOfRoutes";
 
 const Footer = () => {
-  const footerLinks = [
-    {
-      name: "Home",
-      path: "/",
-    },
-    {
-      name: "About",
-      path: "/about",
-    },
-    {
-      name: "Industrial Solutions",
-      path: "/industrial-solutions",
-    },
-    {
-      name: "Mission",
-      path: "/mission",
-    },
-    {
-      name: "Contact",
-      path: "/contact-us",
-    },
-    {
-      name: "Vision",
-      path: "/vision",
-    },
-    {
-      name: "Career",
-      path: "/career",
-    },
-    // {
-    //   name: "About",
-    //   path: "/about",
-    // },
-
-    {
-      name: "Quality Policy",
-      path: "/quality",
-    },
-  ];
   return (
     <>
       <Stack
@@ -229,7 +189,7 @@ const Footer = () => {
                       ...footerStyle.link,
                     }}
                   >
-                    {link.name}
+                    {link.title}
                   </NavLink>
                 ))}
               </Stack>

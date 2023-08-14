@@ -6,9 +6,10 @@ import { NavLink } from "react-router-dom";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import { createMediaLink, createNavLink } from "../../../utilities/factories";
+import { createMediaLink } from "../../../utilities/factories";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { sideNavLinks } from "../../../common/routes/ListOfRoutes";
 
 export const mediaLinks = [
   createMediaLink("https://www.facebook.com/", <FacebookIcon />),
@@ -16,17 +17,6 @@ export const mediaLinks = [
   createMediaLink("https://www.youtube.com/", <YouTubeIcon />),
   createMediaLink("https://www.linkedin.com/", <LinkedInIcon />),
   createMediaLink("https://www.twitter.com/", <TwitterIcon />),
-];
-
-const navLinks = [
-  createNavLink("Home", "/"),
-  createNavLink("Industrial Solutions", "/industrial-solutions"),
-  createNavLink("Career", "/career"),
-  createNavLink("About", "/about"),
-  createNavLink("Mission", "/mission"),
-  createNavLink("Vision", "/vision"),
-  createNavLink("Quality Policy", "/quality"),
-  createNavLink("Contact", "/contact-us"),
 ];
 
 const SideNav = () => {
@@ -41,7 +31,7 @@ const SideNav = () => {
       <Drawer anchor="right" open={isOpen} onClose={toggleDrawer}>
         <Stack component="aside" sx={sideNavStyles.drawerContainer}>
           <Stack component="ul" sx={sideNavStyles.drawerList}>
-            {navLinks.map((link) => (
+            {sideNavLinks.map((link) => (
               <Box
                 component="li"
                 key={link.title}

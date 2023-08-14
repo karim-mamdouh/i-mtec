@@ -2,19 +2,11 @@ import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import { navBarStyles } from "./NavBar.style";
 import { NavLink } from "react-router-dom";
-import { createNavLink } from "../../../utilities/factories";
 import useWindowResize from "../../../utilities/hooks/useWindowResize";
 import Heighlights from "../Heighlights/Heighlights.component";
 import SideNav from "../SideNav/SideNav.component";
 import { sharedImages } from "../../../common/images/sharedImages";
-
-const navLinks = [
-  createNavLink("Home", "/"),
-  createNavLink("Industrial Solutions", "/industrial-solutions"),
-  createNavLink("Career", "/career"),
-  createNavLink("About", "/about"),
-  createNavLink("Contact", "/contact-us"),
-];
+import { navLinks } from "../../../common/routes/ListOfRoutes";
 
 const NavBar = () => {
   const windowWidth = useWindowResize();
