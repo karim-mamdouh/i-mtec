@@ -1,25 +1,25 @@
+//Components
 import { Button, Paper, Stack, Typography } from "@mui/material";
 import { TextFieldInput } from "../../atoms";
+//Styles
 import { searchFormStyles } from "./SearchForm.style";
 
-const SearchForm = () => {
-  return (
-    <Stack sx={searchFormStyles.container}>
-      <Typography>Email *</Typography>
-      <Paper component="form" sx={searchFormStyles.form}>
-        <TextFieldInput
-          sx={searchFormStyles.inputField}
-          InputProps={{
-            tabIndex: -1,
-          }}
-        />
+export const SearchForm = () => (
+  <Stack sx={searchFormStyles.container}>
+    {/* Title */}
+    <Typography>Email *</Typography>
+    {/* Form */}
+    <Paper component="form" sx={searchFormStyles.form}>
+      <TextFieldInput
+        sx={searchFormStyles.inputField}
+        InputProps={{
+          tabIndex: -1,
+        }}
+      />
 
-        <Button variant="outline" sx={searchFormStyles.submitBtn}>
-          Send
-        </Button>
-      </Paper>
-    </Stack>
-  );
-};
-
-export default SearchForm;
+      <Button variant="outline" sx={searchFormStyles.submitBtn}>
+        Send
+      </Button>
+    </Paper>
+  </Stack>
+);

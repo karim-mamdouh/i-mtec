@@ -23,10 +23,8 @@ export const theme = createTheme({
       fontFamily: ["Lato", "sans-serif"].join(","),
       fontWeight: 300,
       textAlign: "justify",
-      // lineHeight: "2rem",
     },
     button: {
-      // fontFamily: ["EB Garamond", "sans-serif"].join(","),
       textTransform: "none",
       boxShadow: 0,
       margin: 0,
@@ -57,51 +55,7 @@ export const theme = createTheme({
     },
   },
 
-  //   theme_palette: {
-  //     primaryColor: "#344C68",
-
-  //     secondaryColor: "#66C8CE",
-
-  //     grey200: "#6E7A8A",
-
-  //     grey300: "#979797",
-
-  //     grey400: "#9E9E9E",
-
-  //     grey800: "#333F51",
-
-  //     grey900: "#1A1A1A",
-
-  //     lightGrey: "#D6DBE1",
-  //   },
-
   components: {
-    MuiButtonBase: {
-      defaultProps: {
-        // disableRipple: true,
-        // disableTouchRipple: true,
-      },
-    },
-    // MuiTextField: {
-    //   variants: [
-    //     {
-    //       props: { variant: "fill" },
-    //       style: {
-    //         "& .MuiOutlinedInput-root": {
-    //           "&.Mui-focused fieldset": {
-    //             borderWidth: 0, // Remove border on focus
-    //           },
-    //           "&:hover fieldset": {
-    //             borderWidth: 0, // Remove border on hover
-    //           },
-    //           "& fieldset": {
-    //             borderWidth: 0, // Remove default border
-    //           },
-    //         },
-    //       },
-    //     },
-    //   ],
-    // },
     MuiButton: {
       variants: [
         {
@@ -146,17 +100,6 @@ export const theme = createTheme({
             borderRadius: "10px",
           },
         },
-        // {
-        //   props: { variant: "text" },
-        //   style: {
-        //     "&:hover": {
-        //       background: "transparent",
-        //     },
-        //     padding: 0,
-        //     fontWeight: 400,
-        //     backgroundColor: "white",
-        //   },
-        // },
       ],
     },
   },

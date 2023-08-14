@@ -10,8 +10,8 @@ import {
 } from "./data/cards";
 import IndustrialCard from "../../components/organisms/IndustrialCards/IndustrialCards.component";
 import MissionCard from "../../components/organisms/missionCard/Mission.component";
-import SearchForm from "../../components/molecules/Search/SearchForm.component";
 import { Banner } from "../../components/atoms";
+import { SearchForm } from "../../components/molecules";
 
 export const Home = () => {
   return (
