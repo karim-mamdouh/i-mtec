@@ -24,22 +24,24 @@ export const footerStyle = {
     // fontSize: "3rem",
     flexWrap: "wrap",
     flexDirection: "row",
-    justifyContent: { xs: "space-between", sm: "flex-end" },
+    justifyContent: { xs: "space-between", sm: "center" },
   },
   link: {
     color: "#fff",
     display: "block",
     marginBottom: "15px",
     // padding: "0 20px",
-    width: "35%",
+    width: "41%",
   },
   desc: {
     fontSize: "16px",
     width: { xs: "100%", sm: "360px" },
   },
   block: {
-    width: { xs: "100%", lg: "33%" },
+    width: { xs: "100%", lg: "24%" },
   },
+  subscribe: { width: { xs: "100%", lg: "40%" } },
+
   socialLink: {
     color: "white",
     backgroundColor: "black",

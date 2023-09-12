@@ -6,7 +6,9 @@ import PropTypes from "prop-types";
 //Styles
 import { heroCardStyles } from "./HeroCard.style";
 
-export const HeroCard = ({ image, title }) => {
+export const HeroCard = ({ image, title, route }) => {
+  const cardId = `/industrial-solutions/#${route}`;
+
   return (
     <Box component="div" sx={heroCardStyles.card}>
       {/* Dimmed background */}
@@ -30,7 +32,7 @@ export const HeroCard = ({ image, title }) => {
         </Typography> */}
         <Button sx={heroCardStyles.button} variant="fill">
           <HashLink
-            to={"/#industrial-cards"}
+            to={cardId}
             style={{ textDecoration: "none", color: "white" }}
           >
             Read More
@@ -44,4 +46,5 @@ export const HeroCard = ({ image, title }) => {
 HeroCard.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
+  route: PropTypes.string,
 };

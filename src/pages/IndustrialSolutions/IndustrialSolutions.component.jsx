@@ -8,7 +8,7 @@ import { industrialSolutionsStyles } from "./IndustrialSolutions.style";
 export const IndustrialSolutions = () => {
   return (
     <>
-      <Banner title=" Innovative Manufacturing. Exceptional Results!" />
+      <Banner title=" Solutions" />
       <Stack component="section" sx={industrialSolutionsStyles.pageContainer}>
         {solutions.map((card, index) => (
           <div id={card.id} key={card.id}>

@@ -16,9 +16,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
 export const cards = [
-  createHeroCard(heroImages.card1, "Sensing Technology"),
-  createHeroCard(heroImages.card2, "Power Distribution"),
-  createHeroCard(heroImages.card3, "Contract Manufacturing"),
+  createHeroCard(heroImages.card1, "Sensing Technology", "sensing"),
+  createHeroCard(heroImages.card2, "Power Distribution", "power"),
+  createHeroCard(heroImages.card3, "Contract Manufacturing", "contract"),
 ];
 
 export const industrialCards = [

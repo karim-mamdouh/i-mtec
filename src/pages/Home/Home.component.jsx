@@ -63,6 +63,7 @@ export const Home = () => {
             title={cards[0].title}
             subtitle={cards[0].subtitle}
             image={cards[0].image}
+            route={cards[0].route}
           />
           <Stack
             component="div"
@@ -73,6 +74,7 @@ export const Home = () => {
                 title={cards[1].title}
                 subtitle={cards[1].subtitle}
                 image={cards[1].image}
+                route={cards[1].route}
               />
             </Box>
             <Box sx={{ width: { xs: "100%", sm: "50%" } }}>
@@ -80,6 +82,7 @@ export const Home = () => {
                 title={cards[2].title}
                 subtitle={cards[2].subtitle}
                 image={cards[2].image}
+                route={cards[2].route}
               />
             </Box>
           </Stack>
@@ -92,7 +95,7 @@ export const Home = () => {
             variant="h4"
             sx={homeStyles.solutionsTitle}
           >
-            Industrial Solutions
+            Solutions
           </Typography>
         </Stack>
       </div>

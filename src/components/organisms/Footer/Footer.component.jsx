@@ -56,7 +56,9 @@ export const Footer = () => (
           alignItems="flex-end"
         >
           {/* Logo */}
-          <Stack sx={{ ...footerStyle.block, marginBottom: "1rem" }}>
+          <Stack
+            sx={{ width: { xs: "100%", lg: "40%" }, marginBottom: "1rem" }}
+          >
             <NavLink
               to="/"
               style={{
@@ -84,7 +86,7 @@ export const Footer = () => (
                 <Stack sx={{ flexGrow: 1, justifyContent: "center" }}>
                   <Typography style={footerStyle.title}>iMT</Typography>
                 </Stack>
-                <Typography sx={{ fontSize: "0.75rem" }}>
+                <Typography sx={{ fontSize: "1rem" }}>
                   Innovative Manufacturing Technologies
                 </Typography>
               </Stack>
@@ -122,7 +124,7 @@ export const Footer = () => (
           <Stack
             sx={{
               gap: "1rem",
-              ...footerStyle.block,
+              width: { xs: "100%", lg: "36%" },
               flexDirection: { xs: "column", xxl: "row" },
               marginBottom: "1rem",
             }}

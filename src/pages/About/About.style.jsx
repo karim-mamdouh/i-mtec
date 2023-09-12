@@ -34,7 +34,7 @@ export const aboutStyles = {
   info: {
     backgroundColor: "var(--ternary-color)",
     width: { xs: "100%", sm: "80%" },
-    margin: "0 auto",
+    margin: "3rem auto 0 auto",
   },
   infoList: { listStyle: "none", padding: { xs: "20px 0", sm: "20px" } },
   infoPoint: {

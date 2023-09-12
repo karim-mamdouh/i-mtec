@@ -14,7 +14,7 @@ export const industrialCardStyle = {
     height: { xs: "15.5rem", xxl: "23rem" },
     width: "100%",
   },
-  figure: { width: "100%" },
+  figure: { width: "100%", maxHeight: "90%" },
   title: {
     fontWeight: "bold",
     fontSize: "1.5rem",

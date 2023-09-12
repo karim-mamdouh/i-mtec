@@ -10,7 +10,7 @@ export const About = () => {
   return (
     <>
       <Banner title="About iMT" />
-      <Stack component="section" sx={aboutStyles.logoSection}>
+      {/* <Stack component="section" sx={aboutStyles.logoSection}>
         <Box component="figure" sx={aboutStyles.figure}>
           <Box
             component="img"
@@ -19,7 +19,7 @@ export const About = () => {
             sx={aboutStyles.logo}
           />
         </Box>
-      </Stack>
+      </Stack> */}
       <Stack component="section" sx={aboutStyles.info}>
         <Box component="ul" sx={aboutStyles.infoList}>
           {Informations.map((point, index) => (

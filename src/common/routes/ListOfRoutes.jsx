@@ -21,7 +21,7 @@ export const appRoutes = [
 
 export const navLinks = [
   createNavLink("Home", "/"),
-  createNavLink("Industrial Solution", "/industrial-solutions"),
+  createNavLink("Solutions", "/industrial-solutions"),
   createNavLink("Career", "/career"),
   createNavLink("About", "/about"),
   createNavLink("Contact", "/contact-us"),
@@ -30,7 +30,7 @@ export const navLinks = [
 export const footerLinks = [
   createNavLink("Home", "/"),
   createNavLink("About", "/about"),
-  createNavLink("Industrial Solution", "/industrial-solutions"),
+  createNavLink("Solutions", "/industrial-solutions"),
   createNavLink("Mission", "/mission"),
   createNavLink("Contact", "/contact-us"),
   createNavLink("Vision", "/vision"),
@@ -40,7 +40,7 @@ export const footerLinks = [
 
 export const sideNavLinks = [
   createNavLink("Home", "/"),
-  createNavLink("Industrial Solution", "/industrial-solutions"),
+  createNavLink("Solutions", "/industrial-solutions"),
   createNavLink("Career", "/career"),
   createNavLink("About", "/about"),
   createNavLink("Mission", "/mission"),

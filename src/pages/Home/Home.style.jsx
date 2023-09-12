@@ -44,7 +44,7 @@ export const homeStyles = {
     marginBottom: "1.5rem",
   },
   solutionsTitle: {
-    padding: "10px 40px",
+    padding: "0.625rem 3.2rem",
     border: "1px solid var(--primary-color)",
     borderTop: "none",
     width: "fit-content",
