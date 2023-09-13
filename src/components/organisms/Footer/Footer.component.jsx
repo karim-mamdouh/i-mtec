@@ -83,7 +83,7 @@ export const Footer = () => (
                 />
               </Stack>
               <Stack sx={{ width: { xs: "100%", md: "65%" } }}>
-                <Stack sx={{ flexGrow: 1, justifyContent: "center" }}>
+                <Stack sx={{ flexGrow: 1, justifyContent: "end" }}>
                   <Typography style={footerStyle.title}>iMT</Typography>
                 </Stack>
                 <Typography sx={{ fontSize: "1rem" }}>

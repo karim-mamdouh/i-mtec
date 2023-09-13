@@ -3,7 +3,7 @@ export const heighlights = {
     flexDirection: { xs: "column", sm: "row" },
     color: "white",
     // borderBottom: "1px solid white",
-    width: "90%",
+    // width: "90%",
     margin: "0 auto",
   },
   headerTitle: {

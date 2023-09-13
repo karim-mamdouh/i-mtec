@@ -4,7 +4,8 @@ export const navBarStyles = {
   },
   container: {
     margin: "0 auto",
-    width: "90%",
+    // width: "90%",
+    width: "100%",
     flexDirection: "row",
     alignItems: "stretch",
     border: "1px solid black",
@@ -14,7 +15,7 @@ export const navBarStyles = {
     maxWidth: "100%",
   },
   logoContainer: {
-    borderRight: "1px solid black",
+    // borderRight: "1px solid black",
     padding: "5px 15px",
     width: (width) => (width >= 768 ? "11%" : "30%"),
   },
@@ -27,7 +28,7 @@ export const navBarStyles = {
   title: {
     width: { xs: "52%", sm: "42%", md: "52%" },
     paddingLeft: { xs: "0.25rem", sm: "1.5rem" },
-    borderRight: { xs: "none", sm: "1px solid black" },
+    // borderRight: { xs: "none", sm: "1px solid black" },
     justifyContent: "center",
   },
   figure: {

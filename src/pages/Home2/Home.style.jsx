@@ -38,7 +38,7 @@ export const homeStyles2 = {
     order: { xs: 1, sm: 2 },
   },
   solutionsTitleContainer: {
-    marginTop: "3.75rem",
+    // marginTop: "3.75rem",
     borderTop: "1px solid var(--primary-color)",
     alignItems: "center",
     marginBottom: "1.5rem",
@@ -65,7 +65,7 @@ export const homeStyles2 = {
   },
   // Mission Section
   missionSection: {
-    paddingTop: "50px",
+    paddingTop: "20px",
     flexDirection: "row",
     gap: "0",
     flexWrap: { xs: "wrap", sm: "nowrap" },

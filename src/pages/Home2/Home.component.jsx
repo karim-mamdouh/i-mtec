@@ -1,11 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { Banner } from "../../components/atoms";
 import { homeStyles2 } from "./Home.style";
-import {
-  HeroCard,
-  IndustrialCard,
-  MissionCard,
-} from "../../components/organisms";
+import { HeroCard, IndustrialCard } from "../../components/organisms";
 import { SearchForm } from "../../components/molecules";
 import {
   cards,
@@ -13,6 +9,7 @@ import {
   mediaLinks,
   missionSectionCards,
 } from "./data/cards";
+import { MissionCard } from "../../components/organisms/missionCard/MissionCard";
 
 export const Home2 = () => {
   console.log("in home2");
@@ -89,7 +86,7 @@ export const Home2 = () => {
           </Stack>
         </Stack>
       </Stack> */}
-      <Stack sx={{ height: "80vh", justifyContent: "center" }}>
+      <Stack sx={{ height: "50vh", justifyContent: "center" }}>
         <Typography
           sx={{
             width: "80%",

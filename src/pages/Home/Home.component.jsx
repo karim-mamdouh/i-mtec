@@ -1,11 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { Banner } from "../../components/atoms";
 import { homeStyles } from "./Home.style";
-import {
-  HeroCard,
-  IndustrialCard,
-  MissionCard,
-} from "../../components/organisms";
+import { HeroCard, IndustrialCard } from "../../components/organisms";
 import { SearchForm } from "../../components/molecules";
 import {
   cards,
@@ -13,6 +9,7 @@ import {
   mediaLinks,
   missionSectionCards,
 } from "./data/cards";
+import { MissionCard } from "../../components/organisms/missionCard/MissionCard";
 
 export const Home = () => {
   return (
