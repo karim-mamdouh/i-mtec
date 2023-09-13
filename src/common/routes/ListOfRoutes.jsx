@@ -6,11 +6,13 @@ import {
   IndustrialSolutions,
   Policy,
 } from "../../pages";
+import { Home2 } from "../../pages/Home2/Home.component";
 import { createAppRoute, createNavLink } from "../../utilities/factories";
 
 export const appRoutes = [
   createAppRoute("/", <Home />),
   createAppRoute("/about", <About />),
+  // createAppRoute("/home2", <Home2 />),
   createAppRoute("/contact-us", <ContactUs />),
   createAppRoute("/vision", <Policy />),
   createAppRoute("/mission", <Policy />),
